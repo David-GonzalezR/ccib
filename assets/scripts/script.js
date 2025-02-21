@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function actualizarNombreEnHeader() {
         const nombreGuardado = localStorage.getItem("userName"); // Obtiene el nombre almacenado en localStorage
         if (nombreGuardado) {
-            userNameDisplay.textContent = `🧑  ${nombreGuardado}`; // Muestra el nombre con un emoji de persona
+            userNameDisplay.textContent = `${nombreGuardado}`; // Muestra el nombre con un emoji de persona
         }
     }
 

@@ -21,26 +21,34 @@ h6 {
 /* Encabezado */
 .layout__header {
   position: fixed;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 4rem;
   text-align: center;
-  background-color: #bd192f;
+  background-color: black;
   color: #fff;
   padding: 0.12rem;
   align-items: center;
-  z-index: 2;  
+  z-index: 2;
+  box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.5);
 }
-.title-header h1, 
-.size_title{
-  font-size: 2rem;  
-}
-.size-font{
-  position:fixed;  
-  display: flex;
-  left: 35%;    
-  align-items:baseline;
-   line-height: 1.7
 
+#user-name-img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size_title {
+  font-size: 1rem;
+}
+
+.size-font {
+  position: fixed;
+  display: flex;
+  left: 35%;
+  top: 0.2em;
+  line-height: 2;
   
 }
 
@@ -54,34 +62,38 @@ h6 {
 }
 
 .title-header {
-  position:fixed;  
+  position: fixed;
   display: flex;
   font-size: 1rem;
   line-height: 1.7;
   left: 44%;
 }
-.size_title{
+
+.size_title {
   font-size: 2rem;
   margin-right: 0.5rem;
 }
+
 .no-style {
-  all: unset; /* Elimina todos los estilos heredados */
-  display: inline-block; /* Para que mantenga su tamaño */
+  all: unset;
+  /* Elimina todos los estilos heredados */
+  display: inline-block;
+  /* Para que mantenga su tamaño */
   padding: 0;
   cursor: pointer;
   font-size: 2rem;
   overflow: hidden;
-  height: 2.2rem;
+  height: 4.2rem;
   margin-right: 0.5rem;
-  
+
 }
 
 
 .controller {
   font-size: 1.5rem;
   cursor: pointer;
-  margin-top: 0.25rem;  
-  transition:  0.2s ease;
+  margin-top: 0.25rem;
+  transition: 0.2s ease;
 }
 
 
@@ -104,7 +116,7 @@ h6 {
 
   border-right: 2px solid #ddd;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .sidebar h2 {
@@ -128,6 +140,7 @@ h6 {
 
 .sidebar ul li ul li {
   width: 100%;
+  padding: 0.65rem;
 }
 
 .what-study:hover,
@@ -146,12 +159,16 @@ hr {
 }
 
 .estudio-libro {
-  max-width: 56.25rem; /* Se mantiene igual */
-  margin: 6.25rem auto; /* Se mantiene igual */
-  padding: 1.25rem; /* 20px -> 1.25rem */
+  max-width: 56.25rem;
+  /* Se mantiene igual */
+  margin: 6.25rem auto;
+  /* Se mantiene igual */
+  padding: 1.25rem;
+  /* 20px -> 1.25rem */
   background: white;
-  border-radius: 0.625rem; /* 0.625rem -> 0.625rem */
-  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1); 
+  border-radius: 0.625rem;
+  /* 0.625rem -> 0.625rem */
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -459,18 +476,21 @@ body {
   padding: 0.625rem 3.125rem;
 }
 
-.sidebar h3{
-  font-size: 1.3rem
+.sidebar h3 {
+  font-size: 1.3rem;
+  color: #bd192f;
 }
-.sidebar-usuario {
 
-  width: 100%;
+.sidebar-usuario {
+  display: flex;
+  gap:1.5rem;
+  position: absolute;
   height: 4.9rem;
-  align-items: center;
   line-height: 3.1;
   font-size: 1.5rem;
-  color: #b60c14;
-  
+  color: white;
+  align-items: center;
+
 
 }
 
@@ -487,38 +507,42 @@ body {
   color: #bd192f;
 }
 
-.title_leccio{
+.title_leccio {
   display: flex;
   flex-direction: row;
   gap: 10;
 }
+
 .number_leccion {
   text-align: center;
-  writing-mode:vertical-rl;  
+  writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
-.leccion_num{
+.leccion_num {
   font-size: 10rem;
 }
-.title_lecciones{
+
+.title_lecciones {
   display: inline-block;
   font-size: 3rem;
   line-height: 1;
   padding-top: 5.43rem;
 }
+
 .mapa {
-  margin: 0.937rem  0.625rem;
+  margin: 0.937rem 0.625rem;
 }
 
-.superTitulo{
+.superTitulo {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.titulo-unidad{
-  text-align: center; 
-  margin-top: 3.125rem; 
+
+.titulo-unidad {
+  text-align: center;
+  margin-top: 3.125rem;
   font-size: 3rem;
 }
 
@@ -527,23 +551,29 @@ body {
 @media (max-width: 1248px) {
 
   html {
-    font-size: 14px; /* Valor por defecto */
-    
-}
-.sidebar a {     
-  padding: 0;
-}
-.header-left {
-  line-height: 3;
-}
- 
+    font-size: 14px;
+    /* Valor por defecto */
+
+  }
+
+  .sidebar a {
+    padding: 0;
+  }
+
+  .header-left {
+    line-height: 3;
+  }
+
 }
 
 @media (max-width: 830px) {
   html {
-    font-size: 13px; /* Valor por defecto */
+    font-size: 13px;
+    /* Valor por defecto */
+  }
+.sidebar-usuario{
+  display :none;
 }
-
 
   #list_one {
     box-shadow: 0px 2px 0.625rem rgba(12, 12, 12, 0.2);
@@ -633,17 +663,19 @@ body {
     margin-left: 0;
   }
 
-  .header-left {   
-   
+  .header-left {
+
     gap: 15px;
     left: 1%;
 
   }
-  .size-font{
+
+  .size-font {
     left: 16%;
   }
-  .title-header{
-    left:26%;
+
+  .title-header {
+    left: 26%;
   }
 
 }
@@ -652,14 +684,15 @@ body {
 
 
   html {
-    font-size: 12px; /* Valor por defecto */
-} 
-  
+    font-size: 12px;
+    /* Valor por defecto */
+  }
 
- 
 
-  .controller {    
-    cursor: pointer;    
+
+
+  .controller {
+    cursor: pointer;
     transition: transform 0.2s ease;
   }
 
@@ -683,26 +716,30 @@ body {
     border-radius: 8px;
   }
 
- 
+
 }
+
 @media (max-width: 600px) {
 
   html {
-    font-size: 10px; /* Valor por defecto */
-} 
-.header-left {   
-   
-  gap: 10px;
-  left: 1%;
-  line-height: 2.2
+    font-size: 10px;
+    /* Valor por defecto */
+  }
+
+  .header-left {
+
+    gap: 10px;
+    left: 1%;
+    line-height: 2.2
+  }
+
+  .size-font {
+    left: 16%;
+  }
+
+  .title-header {
+    left: 26%;
+  }
+
 
 }
-.size-font{
-  left: 16%;
-}
-.title-header{
-  left:26%;
-}
-
-
- }
