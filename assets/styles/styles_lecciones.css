@@ -1,0 +1,708 @@
+/* Estilos del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #e21111;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: 20;
+  margin-bottom: 1.3rem;
+}
+
+/* Encabezado */
+.layout__header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  background-color: #bd192f;
+  color: #fff;
+  padding: 0.12rem;
+  align-items: center;
+  z-index: 2;  
+}
+.title-header h1, 
+.size_title{
+  font-size: 2rem;  
+}
+.size-font{
+  position:fixed;  
+  display: flex;
+  left: 35%;    
+  align-items:baseline;
+   line-height: 1.7
+
+  
+}
+
+.header-left {
+  position: fixed;
+  display: flex;
+  font-weight: 20;
+  gap: 1rem;
+  left: 26%;
+  line-height: 4
+}
+
+.title-header {
+  position:fixed;  
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.7;
+  left: 44%;
+}
+.size_title{
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+.no-style {
+  all: unset; /* Elimina todos los estilos heredados */
+  display: inline-block; /* Para que mantenga su tamaño */
+  padding: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  overflow: hidden;
+  height: 2.2rem;
+  margin-right: 0.5rem;
+  
+}
+
+
+.controller {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.25rem;  
+  transition:  0.2s ease;
+}
+
+
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  margin: 0px;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background: #fff;
+
+
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  margin-bottom: 0.625rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.625rem;
+
+}
+
+.sidebar ul li ul {
+  margin-top: 0.31rem;
+  margin-left: 0.937rem;
+
+}
+
+.sidebar ul li ul li {
+  width: 100%;
+}
+
+.what-study:hover,
+.sidebar ul li ul li:hover {
+  box-shadow: 0px 2px 0.625rem rgba(12, 12, 12, 0.2);
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+hr {
+  border: 1;
+  /* Elimina el borde por defecto */
+  height: 0.125rem;
+  /* Define la altura de la línea */
+  border-style: groove;
+}
+
+.estudio-libro {
+  max-width: 56.25rem; /* Se mantiene igual */
+  margin: 6.25rem auto; /* Se mantiene igual */
+  padding: 1.25rem; /* 20px -> 1.25rem */
+  background: white;
+  border-radius: 0.625rem; /* 0.625rem -> 0.625rem */
+  box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+
+/* Texto */
+.contenido h1 {
+  font-size: 1.625rem;
+  margin-bottom: 0.625rem;
+}
+
+
+.contenido h1 span {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.contenido p {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Video */
+.video-container {
+  margin-top: 1.25rem;
+  max-width: 50rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 35rem;
+  height: 19.6875rem;
+  border-radius: 0.625rem;
+}
+
+
+
+
+
+.video-section {
+  max-width: 50rem;
+  margin: 1.875rem auto;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 7.5rem;
+}
+
+
+/* Encabezado */
+.video-section h2 {
+  color: #333;
+  margin-bottom: 0.9375rem;
+}
+
+
+/* Contenedor del video */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* Relación de aspecto 16:9 */
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: black;
+
+}
+
+/* Video responsive */
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Notas debajo del video */
+.notas {
+  text-align: left;
+  margin-top: 1.25rem;
+}
+
+
+.notas h3 {
+  color: #bd192f;
+}
+
+.notas ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #333;
+}
+
+
+/* Área de contenido */
+.content {
+  width: 75%;
+  padding: 1.25rem;
+  background: #fff;
+  margin-left: 25%;
+  margin-right: 0;
+  min-height: 100vh;
+}
+
+
+.content section {
+  margin-bottom: 1.875rem;
+}
+
+
+.content h2 {
+  margin: 1.125rem 0;
+  border-bottom: 0.125rem solid #bd192f;
+  padding-bottom: 0.3125rem;
+}
+
+
+.content article {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.9375rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+#tema1 {
+  margin-top: 3.125rem;
+}
+
+
+/* Sección de preguntas */
+.question {
+  margin: 2.5rem 0;
+  padding: 0.625rem;
+  background-color: #ecf0f1;
+  border-left: 3px solid #bd192f;
+}
+
+
+.question h4 {
+  margin-bottom: 0.3125rem;
+}
+
+
+/* Formularios */
+form {
+  margin-top: 0.625rem;
+}
+
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+/*Estilos preguntas emparejadas*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.625rem;
+  text-align: left;
+}
+
+th {
+  background-color: #272323;
+  color: white;
+}
+
+.number {
+  font-weight: bold;
+  width: 10rem;
+}
+
+.encabezados_tablas {
+  font-weight: bold;
+}
+
+.title_grafica {
+  margin-top: 3rem;
+}
+
+.resaltar {
+  color: #130101;
+  background-color: #B0E0E6;
+  padding: 1.25rem 1.5625rem;
+  z-index: 1;
+  border-radius: 0.625rem;
+  border-style: ridge;
+}
+
+
+.mensaje_final {
+  background-color: var(--color-principal);
+  box-shadow: 0.125rem 0rem 0.3125rem rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  height: auto;
+  margin-top: 3.125rem;
+}
+
+
+.separacion {
+  height: 1rem;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc
+}
+
+
+
+
+
+button {
+  background-color: #10913b;
+  color: #ffffff !important;
+  padding: 0.75rem 1.25rem;
+  margin: 0.9375rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* Efecto hover más llamativo */
+button:hover {
+  background-color: #9c0f26;
+  /* Un tono más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  /* Efecto de agrandamiento */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  /* Sombra más fuerte */
+}
+
+
+/* Pie de página */
+footer {
+  margin-left: 25%;
+  text-align: center;
+  padding: 0.9375rem;
+  background: #333;
+  color: #fff;
+  margin-top: 1.25rem;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+
+/* Ícono de hamburguesa (inicialmente oculto en pantallas grandes) */
+.hamburger-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 1.25rem;
+  top: 1.25rem;
+}
+
+
+.fa-bars,
+.fa-xmark {
+  user-select: none;
+}
+
+
+/* Barra lateral (sidebar) - diseño para pantallas grandes */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background: #fff;
+  border-right: 0.125rem solid #ddd;
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+
+.sidebar a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-title);
+  font-size: 1.0625rem;
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 3.125rem;
+}
+
+.sidebar h3{
+  font-size: 1.3rem
+}
+.sidebar-usuario {
+
+  width: 100%;
+  height: 4.9rem;
+  align-items: center;
+  line-height: 3.1;
+  font-size: 1.5rem;
+  color: #b60c14;
+  
+
+}
+
+
+
+
+.layout__menu-toggle {
+  display: none;
+
+}
+
+.layout__menu-toggle i {
+  font-size: 1.5rem;
+  color: #bd192f;
+}
+
+.title_leccio{
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+}
+.number_leccion {
+  text-align: center;
+  writing-mode:vertical-rl;  
+  text-orientation: mixed;
+  font-size: 1.5rem; 
+}
+
+.leccion_num{
+  font-size: 10rem;
+}
+.title_lecciones{
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1;
+  padding-top: 5.43rem;
+}
+.mapa {
+  margin: 0.937rem  0.625rem;
+}
+
+.superTitulo{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.titulo-unidad{
+  text-align: center; 
+  margin-top: 3.125rem; 
+  font-size: 3rem;
+}
+
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 1248px) {
+
+  html {
+    font-size: 14px; /* Valor por defecto */
+    
+}
+.sidebar a {     
+  padding: 0;
+}
+.header-left {
+  line-height: 3;
+}
+ 
+}
+
+@media (max-width: 830px) {
+  html {
+    font-size: 13px; /* Valor por defecto */
+}
+
+
+  #list_one {
+    box-shadow: 0px 2px 0.625rem rgba(12, 12, 12, 0.2);
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
+
+  /* Mostrar el ícono de hamburguesa */
+  .layout__menu-toggle {
+    display: block;
+    position: fixed;
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    background-color: white;
+    right: 1rem;
+    top: 0.7rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    z-index: 9999;
+
+  }
+
+  .layout__menu-toggle .fa-xmark {
+    display: none;
+  }
+
+  /* La barra lateral se oculta fuera de la pantalla por defecto */
+  .sidebar {
+    left: 300%;
+    transition: right 0.5s;
+    padding: 1rem 0 1rem 0.2rem;
+
+  }
+
+  /* Cuando el checkbox está marcado, la sidebar se desliza a la vista */
+
+  /* El contenido principal ocupa el ancho completo en móviles */
+  .content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.312rem 0px;
+    padding-left: 0.5rem;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .layout__sidebar--visible {
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    color: white;
+    z-index: 500;
+    transition: right 0.5s;
+  }
+
+  /* Cuando el botón tenga la clase active, se oculta el ícono de las tres barras */
+  .layout__menu-toggle.active .fa-bars {
+    display: none;
+  }
+
+  /* Y se muestra el ícono de la X */
+  .layout__menu-toggle.active .fa-xmark {
+    display: block;
+  }
+
+
+  .sidebar .sidebar__list {
+    color: rgb(22, 22, 21);
+  }
+
+  .layout__header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  footer {
+    margin-left: 0;
+  }
+
+  .header-left {   
+   
+    gap: 15px;
+    left: 1%;
+
+  }
+  .size-font{
+    left: 16%;
+  }
+  .title-header{
+    left:26%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+
+  html {
+    font-size: 12px; /* Valor por defecto */
+} 
+  
+
+ 
+
+  .controller {    
+    cursor: pointer;    
+    transition: transform 0.2s ease;
+  }
+
+  .layout__menu-toggle {
+    background-color: transparent;
+  }
+
+  .layout__menu-toggle .fa-bars {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .layout__menu-toggle .fa-xmark {
+    font-size: 1.5rem;
+
+  }
+
+  #list_one {
+    box-shadow: 0px 2px 0.625rem rgba(12, 12, 12, 0.2);
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
+ 
+}
+@media (max-width: 600px) {
+
+  html {
+    font-size: 10px; /* Valor por defecto */
+} 
+.header-left {   
+   
+  gap: 10px;
+  left: 1%;
+  line-height: 2.2
+
+}
+.size-font{
+  left: 16%;
+}
+.title-header{
+  left:26%;
+}
+
+
+ }
