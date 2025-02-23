@@ -489,3 +489,9 @@ header h1 {
         font-size: 14px;
     }
 }
+
+@media (max-width: 850px) {
+    html{
+        font-size: 14px;
+    }
+}
