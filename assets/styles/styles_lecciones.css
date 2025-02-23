@@ -1,6 +1,6 @@
 /* Estilos del cuerpo */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #e21111;
@@ -34,13 +34,14 @@ h6 {
   box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+
 #user-name-img{
   width: 2.5rem;
   height: 2.5rem;
 }
 
 .size_title {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .size-font {
@@ -64,7 +65,7 @@ h6 {
 .title-header {
   position: fixed;
   display: flex;
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.7;
   left: 44%;
 }
@@ -177,6 +178,7 @@ hr {
 .contenido h1 {
   font-size: 1.625rem;
   margin-bottom: 0.625rem;
+  
 }
 
 
