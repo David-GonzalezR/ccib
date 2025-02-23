@@ -43,28 +43,17 @@ header {
     left:2rem;
     top:30rem;    
     left: 50px;
-    background-color: var(--accent-color);
-    
-  
-   
+    background-color: var(--accent-color);        
      padding: 12px 20px;
-    
-    border: none; color: #ffffff !important;
-    
-    border-radius: 12px;
-    
+        border: none; color: #ffffff !important;    
+    border-radius: 12px;    
     font-size: 16px;
-    
-    font-weight: bold;
-    
-    text-transform: uppercase;
-    
-    letter-spacing: 1px;
-    
+        font-weight: bold;    
+    text-transform: uppercase;    
+    letter-spacing: 1px;    
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 .header-button:hover {
     background-color: #b60c14;
@@ -81,10 +70,10 @@ header {
 }
 
 .logo {
-    height: 4rem;
+    height: 3.5rem;
 }
 
-nav {
+.nav-menu {
     display: flex;
 }
 
@@ -141,6 +130,12 @@ nav {
     cursor: pointer;
 }
 
+
+
+
+
+
+
 footer {
     width: 100%;
     background-color: var(--dark-color);
@@ -153,25 +148,27 @@ footer {
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+        flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 60px; /* Asegurar que no se superponga con el header */
         right: 0;
         background-color: var(--primary-color);
         width: 100%;
         text-align: center;
         padding: 1rem 0;
+        z-index: 1000; /* Para que no quede oculto */
     }
 
     .nav-menu.active {
-        display: block;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 1rem;
+        display: flex;
     }
 
     .menu-toggle {
         display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--light-color);
+        cursor: pointer;
     }
 }
