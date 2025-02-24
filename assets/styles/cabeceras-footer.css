@@ -206,14 +206,14 @@ font-size: 2rem;
     color: var(--dark-color);
     background-color: var(--light-color);
     z-index: 500;
-    transition: right 0.5s;
+    transition: right 10.5s;
   }
-  .layout__menu-toggle.active .fa-bars {
+  .layout__menu-toggle.activ .fa-bars {
     display: none;
   }
 
   /* Y se muestra el ícono de la X */
-  .layout__menu-toggle.active .fa-xmark {
+  .layout__menu-toggle.activ .fa-xmark {
     display: block;
   }
 }

@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isVisible) {
             sidebar.classList.remove('nav-toggle--visible'); 
-            button.classList.remove('active'); // Asegura que el botón vuelve a ☰
+            button.classList.remove('activ'); // Asegura que el botón vuelve a ☰
         } else {
             sidebar.classList.add('nav-toggle--visible');
-            button.classList.add('active'); // Cambia a ✖ solo si se abre
+            button.classList.add('activ'); // Cambia a ✖ solo si se abre
         }
     }
 
