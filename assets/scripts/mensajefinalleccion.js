@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-   // Función para guardar las respuestas en localStorage
+   
 // Función para guardar las respuestas en localStorage
 function guardarRespuesta(idElemento, preguntaId) {
     let respuestas = JSON.parse(localStorage.getItem('unidad1-leccion1')) || {};

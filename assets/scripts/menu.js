@@ -1,6 +1,35 @@
+function toggleDarkMode() {
+  const body = document.body;
+  const button = document.querySelector('.mode-btn');
+
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+      button.innerHTML = "☀️";
+      localStorage.setItem("theme", "dark");
+  } else {
+      button.innerHTML = "🌓";
+      localStorage.setItem("theme", "light");
+  }
+}
+
+// Aplicar el modo guardado en localStorage
+window.onload = function() {
+  if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      document.querySelector('.mode-btn').innerHTML = "☀️ Modo Claro";
+  }
+};
+
 // Espera a que el documento HTML esté completamente cargado antes de ejecutar el código
+document.querySelector('.size-font').addEventListener('click', function() {
+  this.style.transform = this.style.transform === 'translateX(-135%)' ? 'translateX(0)' : 'translateX(-135%)';
+});
+
+
 document.addEventListener('DOMContentLoaded', () => { 
     // Selecciona los elementos necesarios
+    let herrameientas = document.querySelector('.size-font')
     let button = document.querySelector('.layout__menu-toggle');
     let lecciones = document.querySelector('.sidebar__list');
     let sidebar = document.querySelector('.sidebar');
