@@ -16,11 +16,13 @@ body {
 
 header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-color);
     padding: .5rem;
-    position: relative;
+    z-index: 10000;
+    width: 100%;
 }
 .header-cabezera {
 
@@ -75,6 +77,7 @@ header {
 
 .nav-menu {
     display: flex;
+    margin-right: 3rem;
 }
 
 .nav-menu ul {
@@ -121,20 +124,6 @@ header {
 
 
 /* Estilos para el botón de menú */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--light-color);
-    cursor: pointer;
-}
-
-
-
-
-
-
 
 footer {
     width: 100%;
@@ -143,32 +132,90 @@ footer {
     color: var(--light-color);
     text-align: center;
 }
+.nav-toggle{
+    display :none;
+    left:-100px
+}
+.fa-xmark,
+.fa-bars{    
+user-select: none;
+color:#8C1822;
+font-size: 2rem;
+}
+.layout__menu-toggle{
+    display: none;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-menu {
+    .nav-menu{
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Asegurar que no se superponga con el header */
+        left: -1000px;
+    }
+   
+       .nav-toggle{
+        position: fixed;
+        
+        z-index: 9999;
+        width: 75%;
+        height: 100%;
         right: 0;
-        background-color: var(--primary-color);
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-        z-index: 1000; /* Para que no quede oculto */
+        color: #0D0D0D;
+        background-color: var(--light-color);
     }
+    .nav-toggle a {
+        position: relative;
+        text-decoration: none;
+        color: var(--dark-color);  
+        font-size: 1.8rem;      
+    }
+    .nav-toggle li {
+        margin-bottom: 2rem;
+    }
+   /* Mostrar el ícono de hamburguesa */
+  .layout__menu-toggle {
+    display: block;
+    position: fixed;
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 3.2rem;
+    text-align: center;    
+    right: 1rem;
+    top: 0.7rem;
+   
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    z-index: 9999;
 
-    .nav-menu.active {
-        display: flex;
-    }
+  }
 
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: var(--light-color);
-        cursor: pointer;
-    }
+  .layout__menu-toggle .fa-xmark {
+    display: none;
+  }
+  .logo-a{
+    display: none;
+  }
+
+  .nav-toggle--visible {
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    z-index: 500;
+    transition: right 0.5s;
+  }
+  .layout__menu-toggle.active .fa-bars {
+    display: none;
+  }
+
+  /* Y se muestra el ícono de la X */
+  .layout__menu-toggle.active .fa-xmark {
+    display: block;
+  }
 }
+
+
