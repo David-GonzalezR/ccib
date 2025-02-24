@@ -11,8 +11,8 @@ body {
 .p_reader{
   line-height: 1.9;
   padding-left: 1rem;
-  background-color: #130101;
-  color: white
+  
+  
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 }
 
 h6 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 20;
   margin-bottom: 1.3rem;
 }
