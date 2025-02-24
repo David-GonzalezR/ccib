@@ -1,4 +1,15 @@
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.endsWith("index.html")) {
+      let newUrl = window.location.pathname.replace("index.html", "");
+      window.history.replaceState(null, "", newUrl);
+    }
+  });
+
+
 document.addEventListener('DOMContentLoaded', () => { 
+   
+
     // Selecciona los elementos necesarios
     let button = document.querySelector('.layout__menu-toggle');
     let menu = document.querySelector('.nav-toggle--list');
@@ -23,5 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Evento de clic en la lista de lecciones para ocultar el menú
     menu.addEventListener('click', toggleSidebar);
 
+
+
+   
    
 });
+
+
+

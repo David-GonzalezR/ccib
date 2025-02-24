@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCIBarbosa</title>
     <link rel="stylesheet" href="assets/styles/cabeceras-footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -52,7 +52,11 @@
     </div>
 
     <main>
-        <h1></h1>
+        <h1>El ancho de tu pantalla es: <span id="ancho"></span> px</h1>
+
+        <script>
+            document.getElementById("ancho").innerText = window.innerWidth;
+        </script>
     </main>
     <footer>
         <p>&copy; 2025 Centro Cristiano Integral Barbosa. Todos los derechos reservados.</p>
