@@ -173,8 +173,7 @@ font-size: 2rem;
     line-height: 3.2rem;
     text-align: center;    
     right: 1rem;
-    top: 0.7rem;
-   
+    top: 0.7rem;   
     cursor: pointer;
     transition: all 500ms ease-in-out;
     z-index: 9999;
@@ -189,7 +188,6 @@ font-size: 2rem;
   }
 
   .nav-toggle--visible {
-
     display: block;
     position: fixed;
     width: 100%;

@@ -22,49 +22,49 @@ body {
     align-items: center;
     z-index: 2;
     box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  #user-name-img{
+}
+
+#user-name-img {
     width: 2.5rem;
     height: 2.5rem;
-  }
-  
-  .size_title {
+}
+
+.size_title {
     font-size: 1rem;
-  }
-  
-  .size-font {
+}
+
+.size-font {
     position: fixed;
     display: flex;
     left: 35%;
     top: 0.2em;
     line-height: 2;
-    
-  }
-  
-  .header-left {
+
+}
+
+.header-left {
     position: fixed;
     display: flex;
     font-weight: 20;
     gap: 1rem;
     left: 26%;
     line-height: 4
-  }
-  
-  .title-header {
+}
+
+.title-header {
     position: fixed;
     display: flex;
     font-size: 1rem;
     line-height: 1.7;
     left: 44%;
-  }
-  
-  .size_title {
+}
+
+.size_title {
     font-size: 2rem;
     margin-right: 0.5rem;
-  }
-  
-  .no-style {
+}
+
+.no-style {
     all: unset;
     /* Elimina todos los estilos heredados */
     display: inline-block;
@@ -75,46 +75,48 @@ body {
     overflow: hidden;
     height: 4.2rem;
     margin-right: 0.5rem;
-  
-  }
-  
-  
-  .controller {
+
+}
+
+
+.controller {
     font-size: 1.5rem;
     cursor: pointer;
     margin-top: 0.25rem;
     transition: 0.2s ease;
-  }
-  
-  .sidebar-usuario {
+}
+
+.sidebar-usuario {
     display: flex;
-    gap:1.5rem;
+    gap: 1.5rem;
     position: absolute;
     height: 4.9rem;
     line-height: 3.1;
     font-size: 1.5rem;
     color: white;
     align-items: center;
-  
-  
-  }
-  .header-left {
+
+
+}
+
+.header-left {
     position: fixed;
     display: flex;
     font-weight: 20;
     gap: 1rem;
     left: 26%;
     line-height: 4;
-    
-  }
-  .controller {
+
+}
+
+.controller {
     font-size: 1.5rem;
     cursor: pointer;
     margin-top: 0.25rem;
     transition: 0.2s ease;
     color: #fff;
-  }
- 
+}
+
 
 header h1 {
     color: white;
@@ -202,10 +204,14 @@ header h1 {
     gap: 30px;
     width: 100%;
 }
-.disable-link{
-    pointer-events: none ; /* Evita clics en el enlace */
-    opacity: 0.5 ; /* Hace que se vea más tenue */
-    cursor: not-allowed ; /* Muestra un cursor de prohibido */
+
+.disable-link {
+    pointer-events: none;
+    /* Evita clics en el enlace */
+    opacity: 0.5;
+    /* Hace que se vea más tenue */
+    cursor: not-allowed;
+    /* Muestra un cursor de prohibido */
 }
 
 
@@ -302,7 +308,7 @@ header h1 {
 /*estilos boton inscribirse*/
 .button-style {
     position: relative;
-    
+
     background-color: #10913b;
     /* Color de fondo */
     color: #ffffff !important;
@@ -409,26 +415,34 @@ header h1 {
     font-size: 1rem;
     width: 96%;
 }
-#nombre{
+
+#nombre {
     width: 96%;
     margin: 10px 0;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-#telefono{
+
+#telefono {
     width: 96%;
     margin: 10px 0;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
- .inscrito {
-    background: none !important; /* Elimina el fondo */
-    border: none !important; /* Elimina el borde */
-    color: gray !important; /* Cambia el color del texto a gris */
-    cursor: default !important; /* Cambia el cursor para indicar que no es clickeable */
-    font-weight: bold; /* Hace el texto más visible */
+
+.inscrito {
+    background: none !important;
+    /* Elimina el fondo */
+    border: none !important;
+    /* Elimina el borde */
+    color: gray !important;
+    /* Cambia el color del texto a gris */
+    cursor: default !important;
+    /* Cambia el cursor para indicar que no es clickeable */
+    font-weight: bold;
+    /* Hace el texto más visible */
 }
 
 
@@ -481,19 +495,38 @@ header h1 {
     .description {
         font-size: 14px;
     }
-    html{
+
+    html {
         font-size: 14px;
     }
 }
 
 @media (max-width: 500px) {
+    #confirmar-inscripcion {
+        margin-top: 2.5rem;
+    }
+    #telefono,
+    #nombre{
+        font-size: 1.5rem;
+    }
+  
+
+    .popup-inscripcion-content {
+       height: 60%;
+        width: 90%;
+    }
     .title-header {
-      width: 75%;
-      left :25%
-      }
+        width: 75%;
+        left: 25%
+    }
+
+    .sidebar-usuario {
+        gap: 0.5rem;
+    }
+
     .master-card {
         width: 100%;
-        height:80%;
+        height: 60%;
         /* Asegurar que las tarjetas no se expandan demasiado */
         background-color: var(--color-principal);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -507,19 +540,36 @@ header h1 {
         text-align: center;
         margin: 0 auto;
     }
-    
-    .masters{
+
+    .masters {
         width: 100%;
-        height:80%;
+        height: 80%;
     }
+
     .button-style {
         position: relative;
+
+        top: 3rem;
+        margin: 0 auto;
         
-        top: 6rem;
-        left: 3rem;
     }
-    .header-left{
+
+    .header-left {
         display: none;
     }
 
+}
+
+@media (max-width: 390px){
+    .button-style {
+        position: relative;
+
+        top: 3rem;
+        margin: 0 auto;
+        
+    }
+    .master-card {
+        width: 100%;
+        height: 80%;
+    }
 }
