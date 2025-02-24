@@ -337,11 +337,15 @@ h2 {
         font-size: 1rem;
     }
 
-
+    .sidebar-usuario {
+        gap: 0.5rem;
+    }
 
 }
 @media (max-width: 400px) {
-    .title-header {
-        left:20%
+
+  
+    .title-header h1{
+        font-size:1.5rem
     } 
 }

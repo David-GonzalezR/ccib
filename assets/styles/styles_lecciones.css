@@ -6,6 +6,13 @@ body {
   color: #e21111;
   padding: 0;
   font-size: 20px;
+
+}
+.p_reader{
+  line-height: 1.9;
+  padding-left: 1rem;
+  background-color: #130101;
+  color: white
 }
 
 html {
@@ -335,6 +342,7 @@ textarea {
 table {
   width: 100%;
   border-collapse: collapse;
+  max-width: 100%;
 }
 
 th,
@@ -342,6 +350,11 @@ td {
   border: 1px solid #ddd;
   padding: 0.625rem;
   text-align: left;
+  word-wrap: break-word; /* Permite que el texto largo se divida en varias líneas */
+  width: 0.3px; /* Intenta forzar el ancho */
+  overflow: hidden; /* Oculta contenido que se pase */
+  
+  text-overflow: ellipsis; /
 }
 
 th {
@@ -722,7 +735,7 @@ body {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
   html {
     font-size: 10px;
