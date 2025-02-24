@@ -154,16 +154,7 @@ font-size: 2rem;
         left: -1000px;
     }
    
-       .nav-toggle{
-        position: fixed;
-        
-        z-index: 9999;
-        width: 75%;
-        height: 100%;
-        right: 0;
-        color: #0D0D0D;
-        background-color: var(--light-color);
-    }
+  
     .nav-toggle a {
         position: relative;
         text-decoration: none;
