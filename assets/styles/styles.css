@@ -379,10 +379,10 @@ header h1 {
     margin-top: 20px;
     padding: 10px 15px;
     left: 0;
-    background: #b60c14;
+    background:#10913b;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     align-content: center;
 }
@@ -499,22 +499,43 @@ header h1 {
     html {
         font-size: 14px;
     }
+    #telefono,
+    #nombre,
+    #user-name {
+        font-size: 1.5rem;
+    }
+
+    .popup-content{
+        height: 40%;
+        width: 90%;
+    }
 }
 
 @media (max-width: 500px) {
+
+    p {
+        font-size: 1.2rem;
+    }
+
     #confirmar-inscripcion {
         margin-top: 2.5rem;
     }
+
     #telefono,
-    #nombre{
+    #nombre,
+    #user-name {
         font-size: 1.5rem;
     }
-  
 
-    .popup-inscripcion-content {
-       height: 60%;
+    .popup-content{
+        height: 30%;
         width: 90%;
     }
+    .popup-inscripcion-content {
+        height: 60%;
+        width: 90%;
+    }
+
     .title-header {
         width: 75%;
         left: 25%
@@ -551,7 +572,7 @@ header h1 {
 
         top: 3rem;
         margin: 0 auto;
-        
+
     }
 
     .header-left {
@@ -560,14 +581,20 @@ header h1 {
 
 }
 
-@media (max-width: 390px){
+@media (max-width: 395px) {
+
+    .popup-content{
+        height: 40%;
+        width: 90%;
+    }
     .button-style {
         position: relative;
 
         top: 3rem;
         margin: 0 auto;
-        
+
     }
+
     .master-card {
         width: 100%;
         height: 80%;
