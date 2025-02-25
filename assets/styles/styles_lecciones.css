@@ -37,11 +37,13 @@ body {
 .dark-mode th,
 .dark-mode td,
 .dark-mode input,
-.dark-mode textarea,
 .dark-mode select
  {
   background-color: #121212;
   color: white;
+}
+.dark-mode textarea{
+  background-color: red;
 }
 
 dark-mode table {
@@ -114,7 +116,7 @@ h6 {
   left: 35%;
   top: 0.2em;
   line-height: 2;
-
+border-radius: 10px;
 }
 
 .header-left {
@@ -253,11 +255,7 @@ hr {
   font-weight: bold;
 }
 
-.contenido p {
-  font-size: 1.125rem;
-  color: #555;
-  line-height: 1.5;
-}
+
 
 
 /* Video */
@@ -346,15 +344,16 @@ hr {
 }
 
 .size-font {
+  display: none;
   position: fixed;
   background-color: #bd192f;
   top: 50%;
   color: white;
   width: 20rem;
-
+z-index: 1000;
   padding: 10px;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(-135%);
+  transform: translateX(-318%);
   /* Mueve el div hacia la derecha */
 }
 
@@ -368,7 +367,7 @@ hr {
   content: "⚙️";
   position: absolute;
   font-size: 3rem;
-  top: 50%;
+  top: 25%;
   right: -30px;
   width: 0;
   height: 0;
@@ -376,7 +375,7 @@ hr {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 30px solid #bd192f;
-  transform: translateY(-50%);
+  transform: translateY(-1%);
 }
 
 
@@ -406,7 +405,9 @@ hr {
 /* Sección de preguntas */
 .question {
   margin: 2.5rem 0;
+  margin-left: .2rem;
   padding: 0.625rem;
+  padding-left: .6rem;
   background-color: #ecf0f1;
   border-left: 3px solid #bd192f;
 }
@@ -574,6 +575,7 @@ body {
   border-right: 0.125rem solid #ddd;
   padding: 1.25rem;
   overflow-y: auto;
+  margin-top: 4rem;
 }
 
 
@@ -887,5 +889,22 @@ body {
     display: none;
   }
 
-
+  .size-font {
+     display:block;
+    top: 50%;      
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-135%);
+    
+  }
+  
+  /* Cuando pasas el mouse sobre el div, se desplaza hacia la izquierda */
+ 
+  /* Flecha al lado derecho */
+  .size-font::before {    
+    
+    top: 25%;
+    right: -30px;     
+ 
+    transform: translateY(-1%);
+  }
 }
