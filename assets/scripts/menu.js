@@ -55,21 +55,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
 });
+function changeFontSize(change) {
+  let body = document.body;
+  let currentSize = parseFloat(window.getComputedStyle(body).fontSize);
+  let newSize = currentSize + change;
+
+  // Seleccionar todos los elementos de la página excepto <table>
+  document.querySelectorAll("body *:not(table):not(table *)").forEach(el => {
+      el.style.fontSize = newSize + "px";
+  });
+
+  // Guardar en localStorage
+  localStorage.setItem("fontSize", newSize);
+}
+
+// Función para cargar el tamaño de fuente guardado
 function loadFontSize() {
-    let savedSize = localStorage.getItem("fontSize");
-    if (savedSize) {
-      document.body.style.fontSize = savedSize + "px";
-    }
+  let savedSize = localStorage.getItem("fontSize");
+
+  if (savedSize) {
+      // Aplicar tamaño de fuente solo a elementos que no sean <table>
+      document.querySelectorAll("body *:not(table):not(table *)").forEach(el => {
+          el.style.fontSize = savedSize + "px";
+      });
   }
+}
 
-  function changeFontSize(change) {
-    let body = document.body;
-    let currentSize = parseFloat(window.getComputedStyle(body).fontSize);
-    let newSize = currentSize + change;
-
-    body.style.fontSize = newSize + "px";
-    localStorage.setItem("fontSize", newSize); // Guardar en localStorage
-  }
-
-  // Cargar el tamaño de fuente al abrir la página
-  loadFontSize();
+// Cargar el tamaño guardado al iniciar
+loadFontSize();

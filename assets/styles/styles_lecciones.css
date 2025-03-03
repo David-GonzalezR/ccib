@@ -630,30 +630,32 @@ body {
   text-align: center;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 .leccion_num {
-  font-size: 10rem;
+  font-size: 10rem !important
+  
 }
 
 .title_lecciones {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 3rem !important;
   line-height: 1;
   padding-top: 5.43rem;
 }
 
 .mapa {
   margin: 1rem auto;
-  transition: transform 0.3s ease-in-out;
+  
 }
+.autoexamen,
+.compruebe_respuestas{
+  margin: 1 rem 0;
+  padding: 1rem 0.5rem; 
+  
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 
-.mapa:hover {
-  transform: scale(2);
-  /* Aumenta el tamaño al hacer hover */
-
-  z-index: 1000;
 }
 
 .container_question {

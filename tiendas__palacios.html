@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Tiendas, Templos y Palacios</title>
-    <link rel="stylesheet" href="assets/styles/styles_lecciones.css?v=1.0.6">
-    <link rel="stylesheet" href="assets/styles/reset.css?v=1.0.6">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1.0.6">
+    <link rel="stylesheet" href="assets/styles/styles_lecciones.css?v=1.0.7">
+    <link rel="stylesheet" href="assets/styles/reset.css?v=1.0.7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1.0.7   "> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     <!-- scrips -->
-    <script src="assets/scripts/menu.js?v=1.0.6 " defer></script>
-    <script src="assets/scripts/enviar-respuestas.js?v=1.0.6" defer></script>
-    <script src="assets/scripts/mensajefinalleccion.js?v=1.0.6" defer></script>
-    <script src="assets/scripts/script.js?v=1.0.6" defer></script>
+    <script src="assets/scripts/menu.js?v=1.0.7 " defer></script>
+    <script src="assets/scripts/enviar-respuestas.js?v=1.0.7" defer></script>
+    <script src="assets/scripts/mensajefinalleccion.js?v=1.0.7" defer></script>
+    <script src="assets/scripts/script.js?v=1.0.7" defer></script>
 </head>
 
 <body>
@@ -255,7 +265,7 @@
                             <button type="button" onclick="guardarRespuesta('respuesta-2', 2)">Guardar
                                 Respuesta</button>
 
-                            
+
                         </form>
                     </div>
 
@@ -841,24 +851,42 @@
                         Mientras estudia el Antiguo Testamento, espere que Dios le hable a través del mismo. ¡Este es un
                         mensaje personal para usted!
                     </p>
-                    <div class="mensaje_final" id="mensaje">
+                    <div class="mensaje_final">
+                        <h1 class="mensaje"></h1>
                         <!-- El mensaje personalizado se insertará aquí -->
+                        <p>Con la gracia de Dios, has completado esta lección y nos alegra ver tu dedicación. Recuerda
+                            que cada paso en tu aprendizaje es una bendición y una oportunidad para crecer en sabiduría.
+                            Como nos enseña Santiago 1:5:
+
+                            "Si a alguno de ustedes le falta sabiduría, pídasela a Dios, quien da a todos abundantemente
+                            sin reproche."
+
+                            Que el Señor continúe guiando cada uno de tus pasos y te ilumine en este camino de
+                            conocimiento. ¡Adelante, sigue estudiando y dejando que la luz de Cristo brille en tu vida!
+
+                            ¡Bendiciones y éxito en tus próximos desafíos! <br> <br>
+                            Ahora le puedes enviar todas las respuestas a tu tutor, si lo deseas las puedes revisar mas
+                            adelante antes de enviarlas. </p> <br><br>
+
+                        <button type="submit" id="enviar_respuestas1" style="margin: 0 auto">Enviar Todas las Respuestas </button>
 
                     </div>
 
-                    <button type="submit" id="enviar_respuestas1">Enviar Todas las Respuestas </button>
 
                     <br><br>
 
                     <section>
-                        <h2>Autoexamen</h2>
-                        <p class="instrucciones">
-                            Después que haya repasado esta lección, tome el autoexamen. Luego compruebe sus respuestas
-                            con las que se incluyen al final de este libro de texto. Repase cualquier respuesta
-                            incorrecta.
-                        </p>
 
-                        <form id="autoexamen1">
+
+                        <form id="autoexamen2" class="autoexamen">
+                            <h2>Autoexamen</h2>
+                            <p class="instrucciones">
+                                Después que haya repasado esta lección, tome el autoexamen. Luego compruebe sus
+                                respuestas
+                                con las que se incluyen al final de este libro de texto. Repase cualquier respuesta
+                                incorrecta.
+                            </p>
+
                             <!-- Pregunta 1 -->
                             <div class="question">
                                 <p class="p_reader"><strong>1.</strong> Un ejemplo de cómo Dios le habla al hombre a
@@ -1830,58 +1858,61 @@
                             <button type="button" onclick="guardarRespuesta('respuesta-27', 27)">Guardar
                                 Respuesta</button>
                         </form>
-                    
 
-                    <h3>Emparejamiento de descendientes y lugares/naciones</h3>
-                    <p>17. Revise el cuadro, el mapa y las descripciones sobre el asentamiento de los descendientes de Noé. Luego, asocie cada hijo de Noé con el lugar (a-i) y la nación (j-r) correspondiente, escribiendo el número del hijo frente a cada opción.</p>
-                    <div class="container_question">
-                        <div class="column_question">
-                            <ul>
-                                <li>a. Acad</li>
-                                <li>b. África</li>
-                                <li>c. Aram</li>
-                                <li>d. Asur</li>
-                                <li>e. Mar Negro</li>
-                                <li>f. Mar Caspio</li>
-                                <li>g. Nínive</li>
-                                <li>h. Sinar</li>
-                                <li>i. España</li>
-                            </ul>
+
+                        <h3>Emparejamiento de descendientes y lugares/naciones</h3>
+                        <p>17. Revise el cuadro, el mapa y las descripciones sobre el asentamiento de los descendientes
+                            de Noé. Luego, asocie cada hijo de Noé con el lugar (a-i) y la nación (j-r) correspondiente,
+                            escribiendo el número del hijo frente a cada opción.</p>
+                        <div class="container_question">
+                            <div class="column_question">
+                                <ul>
+                                    <li>a. Acad</li>
+                                    <li>b. África</li>
+                                    <li>c. Aram</li>
+                                    <li>d. Asur</li>
+                                    <li>e. Mar Negro</li>
+                                    <li>f. Mar Caspio</li>
+                                    <li>g. Nínive</li>
+                                    <li>h. Sinar</li>
+                                    <li>i. España</li>
+                                </ul>
+                            </div>
+                            <div class="column_question">
+                                <ul>
+                                    <li>j. Asirios</li>
+                                    <li>k. Celtas</li>
+                                    <li>l. Caldeos</li>
+                                    <li>m. Elamitas</li>
+                                    <li>n. Etíopes</li>
+                                    <li>o. Libios</li>
+                                    <li>p. Medos</li>
+                                    <li>q. Cananeos</li>
+                                    <li>r. Escitas</li>
+                                </ul>
+                            </div>
+                            <div class="column_question">
+                                <h4>Seleccione el descendiente:</h4>
+                                <ul>
+                                    <li>1) Sem</li>
+                                    <li>2) Hijos de Cam</li>
+                                    <li>3) Jafet</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="column_question">
-                            <ul>
-                                <li>j. Asirios</li>
-                                <li>k. Celtas</li>
-                                <li>l. Caldeos</li>
-                                <li>m. Elamitas</li>
-                                <li>n. Etíopes</li>
-                                <li>o. Libios</li>
-                                <li>p. Medos</li>
-                                <li>q. Cananeos</li>
-                                <li>r. Escitas</li>
-                            </ul>
-                        </div>
-                        <div class="column_question">
-                            <h4>Seleccione el descendiente:</h4>
-                            <ul>
-                                <li>1) Sem</li>
-                                <li>2) Hijos de Cam</li>
-                                <li>3) Jafet</li>
-                            </ul>
-                        </div>
+
+                        <form>
+                            <textarea id="respuesta-28" rows="5"
+                                placeholder="Escribe todas tus respuestas aquí&#10;a con 1&#10;b con 3..."></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-28', 28)">Guardar Respuesta
+                            </button>
+                        </form>
+
                     </div>
-
-                    <form>
-                        <textarea id="respuesta-28" rows="5"
-                            placeholder="Escribe todas tus respuestas aquí&#10;a con 1&#10;b con 3..."></textarea>
-                        <button type="button" onclick="guardarRespuesta('respuesta-28', 28)">Guardar Respuesta </button>
-                    </form>
-
-                </div>
                     <h2>Abraham y sus descendientes</h2>
                     <h6><strong>Objetivo 9.</strong> Seleccionar una razón de la importancia especial de Abraham en un
                         estudio del Antiguo Testamento.</h6>
-                   
+
                     <p class="p-reader">
                         El Espíritu Santo ahora llama nuestra atención a los semitas (Génesis 11:10-32). Se nos da un
                         recuento de diez generaciones comenzando con la familia de Sem y terminando con la familia de
@@ -1895,27 +1926,332 @@
                     </p>
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p class="p_reader">18.	En un estudio del Antiguo Testamento la vida de Abraham es de suma importancia porque sus descendientes:
+                        <p class="p_reader">18. En un estudio del Antiguo Testamento la vida de Abraham es de suma
+                            importancia porque sus descendientes:
                         </p>
                         <form id="radio-29">
                             <input type="radio" name="29" value="a" id="q8a">
-                            <label for="q8a">a)	fueron muy numerosos.</label><br>
+                            <label for="q8a">a) fueron muy numerosos.</label><br>
 
                             <input type="radio" name="29" value="b" id="q8b">
-                            <label for="q8b">b)	fueron llamados los semitas.</label><br>
+                            <label for="q8b">b) fueron llamados los semitas.</label><br>
 
                             <input type="radio" name="29" value="c" id="q8c">
-                            <label for="q8c">c)	constituían el pueblo de Dios.</label><br>
+                            <label for="q8c">c) constituían el pueblo de Dios.</label><br>
 
                             <input type="radio" name="29" value="d" id="q8c">
-                            <label for="q8c">d)	pueden comprobar que descienden de Sem.</label><br>
+                            <label for="q8c">d) pueden comprobar que descienden de Sem.</label><br>
 
                             <button type="button" onclick="guardarRespuesta('radio-29', 29)">Guardar Respuesta</button>
                         </form>
 
                     </div>
-                    
- <!--abajo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+                    <div class="mensaje_final">
+                        <h1 class="mensaje"></h1>
+                        <!-- El mensaje personalizado se insertará aquí -->
+                        <p>¡Felicidades! Has finalizado la lección 2, y nos alegra ver tu compromiso con el aprendizaje.
+                            Cada paso que das es una oportunidad para crecer y fortalecer tu conocimiento. Como dice
+                            Santiago 1:5:
+
+                            "Si a alguno de ustedes le falta sabiduría, pídasela a Dios, quien da a todos abundantemente
+                            sin reproche."
+
+                            Que el Señor continúe guiando tu camino y te dé claridad en cada nuevo desafío. Sigue
+                            adelante con confianza y determinación.
+
+                            ¡Bendiciones y mucho éxito en lo que viene! <br> <br>
+                            Ahora puedes enviar todas tus respuestas a tu tutor. Si lo prefieres, también puedes
+                            revisarlas antes de enviarlas.
+                        </p>
+
+                        <button type="submit" id="enviar_respuestas2">Enviar Todas las Respuestas </button>
+
+                    </div>
+
+
+                    <br><br>
+
+
+
+                    <form id="autoexamen2" class="autoexamen">
+                        <h2>Autoexamen</h2>
+                        <!-- Pregunta 1 -->
+                        <div class="question">
+                            <p>1. El relato de la creación de Génesis es importante porque nos dice:</p>
+                            <label><input type="radio" name="p1" value="a"> a) Que Dios creó el mundo de la
+                                nada.</label><br>
+                            <label><input type="radio" name="p1" value="b"> b) El año en que se hizo la
+                                creación.</label><br>
+                            <label><input type="radio" name="p1" value="c"> c) Dónde estuvo localizado el huerto del
+                                Edén.</label><br>
+                        </div>
+
+                        <!-- Pregunta 2 -->
+                        <div class="question">
+                            <p>2. Dios esperaba que el hombre:</p>
+                            <label><input type="radio" name="p2" value="a"> a) Fuera libre de toda
+                                responsabilidad.</label><br>
+                            <label><input type="radio" name="p2" value="b"> b) Tuviera dominio sobre toda la
+                                creación.</label><br>
+                            <label><input type="radio" name="p2" value="c"> c) Amara a Dios porque debía
+                                amarlo.</label><br>
+                        </div>
+
+                        <!-- Pregunta 3 -->
+                        <div class="question">
+                            <p>3. Encierre en un círculo la letra correspondiente a cada declaración CORRECTA:</p>
+                            <label><input type="checkbox" name="p3" value="a"> a) La caída destruyó completamente los
+                                planes de Dios.</label><br>
+                            <label><input type="checkbox" name="p3" value="b"> b) Satanás le dijo la verdad a
+                                Eva.</label><br>
+                            <label><input type="checkbox" name="p3" value="c"> c) Solamente Adán y Eva fueron afectados
+                                por la caída.</label><br>
+                            <label><input type="checkbox" name="p3" value="d"> d) Fue necesario matar un animal para
+                                cubrir a Adán y a Eva.</label><br>
+                        </div>
+
+                        <!-- Pregunta 4 -->
+                        <div class="question">
+                            <p>4. La lección espiritual ilustrada por la respuesta de Dios a la ofrenda de Caín y Abel
+                                consiste en que:</p>
+                            <label><input type="radio" name="p4" value="a"> a) Dios no exige ofrendas por el
+                                pecado.</label><br>
+                            <label><input type="radio" name="p4" value="b"> b) No hay ninguna forma de cubrir el
+                                pecado.</label><br>
+                            <label><input type="radio" name="p4" value="c"> c) El hombre no puede cubrir su pecado por
+                                su esfuerzo propio.</label><br>
+                        </div>
+
+                        <!-- Pregunta 5 -->
+                        <div class="question">
+                            <p>5. Encierre en un círculo la letra frente a cada declaración que dé la descripción de la
+                                caída:</p>
+                            <label><input type="checkbox" name="p5" value="a"> a) Adán y Eva fueron creados diferentes
+                                de los animales.</label><br>
+                            <label><input type="checkbox" name="p5" value="b"> b) Adán y Eva escucharon la sugerencia de
+                                Satanás de desobedecer a Dios.</label><br>
+                            <label><input type="checkbox" name="p5" value="c"> c) Adán y Eva gozaban de compañerismo con
+                                Dios.</label><br>
+                        </div>
+
+                        <!-- Pregunta 6 -->
+                        <div class="question">
+                            <p>6. Noé no fue destruido por el diluvio porque:</p>
+                            <label><input type="radio" name="p6" value="a"> a) Era varón justo y tenía fe en
+                                Dios.</label><br>
+                            <label><input type="radio" name="p6" value="b"> b) Era hijo de un hombre bastante
+                                bueno.</label><br>
+                            <label><input type="radio" name="p6" value="c"> c) Tuvo hijos que lo amaban.</label><br>
+                        </div>
+
+                        <!-- Pregunta 7 -->
+                        <div class="question">
+                            <p>7. Los descendientes de Sem se asentaron en el área:</p>
+                            <label><input type="radio" name="p7" value="a"> a) De los mares Negro y Caspio.</label><br>
+                            <label><input type="radio" name="p7" value="b"> b) Del norte de África.</label><br>
+                            <label><input type="radio" name="p7" value="c"> c) Al norte del Golfo Pérsico.</label><br>
+                        </div>
+
+                        <!-- Pregunta 8 -->
+                        <div class="question">
+                            <p>8. Escriba una lista de los siguientes eventos, en el orden en que ocurrieron. Escriba un
+                                1 frente a lo que sucedió primero, un 2 frente a lo que sucedió después, y así
+                                sucesivamente.</p>
+                            <ul>
+
+                                <li>.....a) Noé creyó en la palabra de Dios y construyó el arca.</li>
+                                <li>.....b) Adán y Eva siguieron el consejo de Satanás.</li>
+                                <li>.....c) Abel fue asesinado por su hermano Caín.></li>
+                                <li>.....d) Dios creó los cielos y la tierra.</li>
+                                <li>.....e) Nació Abraham.</li>
+                                <li>.....f) Dios envió el diluvio como juicio sobre la humanidad pecadora.</li>
+                                <li> .....g) Dios le dio al hombre reglamentos y responsabilidades sobre la creación.
+                                </li>
+                                <li> .....h) Dios hizo un pacto con la humanidad con el arco iris como señal.</li>
+                                <li>.....i) Adán y Eva tuvieron que salir del huerto del Edén.</li>
+
+
+                            </ul><br>
+
+                            <textarea name="q2" rows="3" placeholder="Escribe asi: 1 ... a "
+                                id="respuesta-4"></textarea>
+                        </div>
+
+                        <!-- Pregunta 9 -->
+                        <div class="question">
+                            <p>9. Encierre en un círculo la letra correspondiente a las declaraciones siguientes que
+                                sean CORRECTAS:</p>
+                            <label><input type="checkbox" name="p9" value="a"> a) Abraham perteneció a la raza
+                                semita.</label><br>
+                            <label><input type="checkbox" name="p9" value="b"> b) Jafet fue uno de los antepasados de
+                                Abraham.</label><br>
+                            <label><input type="checkbox" name="p9" value="c"> c) Los creyentes de hoy pertenecen al
+                                pueblo de Dios.</label><br>
+                        </div>
+
+                        <br>
+                        <button style="margin: 0 auto" class="enviarAutoexamen" data-examen="autoexamen2">Enviar
+                            Autoexamen</button>
+
+                    </form>
+                    <div>
+                    </div>
+
+                    <br><br>
+                    <section class="compruebe_respuestas">
+                        <h2>Compruebe Sus Respuestas</h2>
+
+                        <h1>10</h1>
+                        <ul>
+                            <li>b) La humanidad fue sujeta a muerte física.</li>
+                            <li>c) Adán y Eva fueron expulsados del huerto.</li>
+                            <li>e) A Adán y a Eva les fue permitido comer del árbol de la vida.</li>
+                        </ul>
+
+                        <h1>1</h1>
+                        <ul>
+                            <li>a - 3) Mundo.</li>
+                            <li>b - 5) Raza humana.</li>
+                            <li>c - 6) Pecado.</li>
+                            <li>d - 7) Redención (Génesis 3:15 se refiere a una profecía que señala a Jesucristo).</li>
+                            <li>e - 1) Familia.</li>
+                            <li>f - 4) Civilización.</li>
+                            <li>g - 2) Naciones del mundo.</li>
+                        </ul>
+
+                        <h1>11</h1>
+                        <p>Nos enseña que el único medio por el cual el pecado puede ser cubierto es a través de la
+                            muerte. Los buenos esfuerzos del hombre no son aceptables. (Su respuesta debe ser similar.)
+                        </p>
+
+                        <h1>2</h1>
+                        <ul>
+                            <li>a - Incorrecta.</li>
+                            <li>b - Correcta.</li>
+                            <li>c - Correcta.</li>
+                        </ul>
+
+                        <h1>12</h1>
+                        <p>b) fue el antepasado humano de Cristo.</p>
+
+                        <h1>3</h1>
+                        <p>b) que Dios creó el mundo por su palabra.</p>
+
+                        <h1>13</h2>
+                            <ol>
+                                <li>Adán.</li>
+                                <li>Set.</li>
+                                <li>Enós.</li>
+                                <li>Cainán.</li>
+                                <li>Mahalaleel.</li>
+                                <li>Jared.</li>
+                                <li>Enoc.</li>
+                                <li>Matusalén.</li>
+                                <li>Lamec.</li>
+                                <li>Noé.</li>
+                                <li>Sem.</li>
+                            </ol>
+
+                            <h1>4</h2>
+                                <ul>
+                                    <li>a - Correcta.</li>
+                                    <li>b - Incorrecta.</li>
+                                    <li>c - Correcta.</li>
+                                </ul>
+
+                                <h1>14</h2>
+                                    <ul>
+                                        <li>a - Correcta.</li>
+                                        <li>b - Incorrecta.</li>
+                                        <li>c - Incorrecta.</li>
+                                        <li>d - Correcta.</li>
+                                    </ul>
+
+                                    <h1>5</h2>
+                                        <p>Los principales propósitos de Dios para la humanidad fueron:</p>
+                                        <ul>
+                                            <li>a) Que la humanidad gobernaría sobre la creación.</li>
+                                            <li>b) Que la humanidad tuviera amistad con Dios.</li>
+                                        </ul>
+
+                                        <h1>15</h2>
+                                            <ul>
+                                                <li>a - Dios prometió que nunca volvería a destruir al mundo con un
+                                                    diluvio.</li>
+                                                <li>b - La señal de Dios fue el arco iris.</li>
+                                            </ul>
+
+                                            <h1>6</h1>
+                                            <ul>
+                                                <li>a - Fue llamado el árbol de la ciencia del bien y del mal.</li>
+                                                <li>b - Dios dijo que ellos no deberían comer de su fruto.</li>
+                                            </ul>
+
+                                            <h1>16</h1>
+                                            <p>Dios castigó al mundo para poder restaurar las relaciones de la humanidad
+                                                con Él.</p>
+
+                                            <h1>7</h1>
+                                            <ul>
+                                                <li>a - 2</li>
+                                                <li>b - 1</li>
+                                                <li>c - 6</li>
+                                                <li>d - 3</li>
+                                                <li>e - 4</li>
+                                                <li>f - 5</li>
+                                            </ul>
+
+                                            <h1>17</h1>
+                                            <ul>
+                                                <li>a - 2) Hijos de Cam.</li>
+                                                <li>b - 2) Hijos de Cam.</li>
+                                                <li>c - 1) Sem.</li>
+                                                <li>d - 1) Sem.</li>
+                                                <li>e - 3) Jafet.</li>
+                                                <li>f - 3) Jafet.</li>
+                                                <li>g - 2) Hijos de Cam.</li>
+                                                <li>h - 2) Hijos de Cam.</li>
+                                                <li>i - 3) Jafet.</li>
+                                                <li>j - 1) Sem.</li>
+                                                <li>k - 3) Jafet.</li>
+                                                <li>l - 1) Sem.</li>
+                                                <li>m - 1) Sem.</li>
+                                                <li>n - 2) Hijos de Cam.</li>
+                                                <li>o - 2) Hijos de Cam.</li>
+                                                <li>p - 3) Jafet.</li>
+                                                <li>q - 2) Hijos de Cam.</li>
+                                                <li>r - 3) Jafet.</li>
+                                            </ul>
+
+                                            <h1>8</h1>
+                                            <p>Esta es la forma en que yo contestaría estas preguntas:</p>
+                                            <ul>
+                                                <li>a - “Qué buena sería la fruta para comerla”.</li>
+                                                <li>b - “Qué hermoso era el árbol”.</li>
+                                                <li>c - “Qué maravilloso sería el llegar a ser sabio”.</li>
+                                            </ul>
+
+                                            <h1>18</h1>
+                                            <p>c) constituían el pueblo de Dios.</p>
+
+                                            <h1>9</h1>
+                                            <ul>
+                                                <li>a - Correcta.</li>
+                                                <li>b - Incorrecta.</li>
+                                                <li>c - Incorrecta.</li>
+                                            </ul>
+
+                    </section>
+
+
+
+                    <!-- arribaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ sin
+                     -->
+                    <!--abajo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                      -->
 
                     <div class="title_leccio">

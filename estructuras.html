@@ -1,0 +1,71 @@
+<!-- Estructura de la lección -->
+<div class="title_leccio">
+    <span class="number_leccion">LECCIÓN</span>
+    <span class="leccion_num">[Número de la lección]</span>
+    <span class="title_lecciones">[Título de la lección con salto de línea <br> donde sea necesario]</span>
+</div>
+
+<!-- Títulos y párrafos -->
+<h2>[Título de la sección]</h2>
+<p class="p-reader">[Contenido del párrafo]</p>
+
+<!-- Objetivos -->
+<h6><strong>Objetivo [Número].</strong> [Texto del objetivo]</h6>
+
+<!-- Aplicaciones -->
+<!-- Pregunta con múltiples respuestas (checkbox) -->
+<div class="question">
+    <h4>Aplicación</h4>
+    <p>12. La importancia de Set en los planes de Dios para restaurar las relaciones rotas del hombre con Dios, reside en que:</p>
+    <form id="formulario-23" data-formulario="23">
+        <label><input type="checkbox" name="avance" value="avance1"> a) no experimentó muerte.</label> <br>
+        <label><input type="checkbox" name="avance" value="avance2"> b) fue el antepasado humano de Cristo.</label> <br>
+        <label><input type="checkbox" name="avance" value="avance3"> c) pudo pagar por el pecado del hombre.</label> <br>
+        <button type="button" onclick="guardarRespuesta('formulario-23', 23)">Guardar Respuesta</button>
+    </form>
+</div>
+
+<!-- Pregunta con respuesta escrita (textarea) -->
+<div class="question">
+    <h4>Aplicación</h4>
+    <p class="p-reader">11. Dios aceptó la ofrenda de Abel, pero rechazó la de Caín. Describa en sus propias palabras el principio espiritual que nos enseña este incidente.</p>
+    <form>
+        <textarea rows="3" placeholder="Escribe tu respuesta aquí" id="respuesta-22"></textarea>
+        <button type="button" onclick="guardarRespuesta('respuesta-22', 22)">Guardar Respuesta</button>
+    </form>
+</div>
+
+
+<!-- Pregunta con respuesta única (radio button) -->
+<div class="question">
+    <h4>Aplicación</h4>
+    <p class="p-reader">3. La importancia de la narración del Génesis acerca de la creación radica en afirmar:</p>
+    <form id="radio-14">
+        <input type="radio" name="14" value="a" id="q8a">
+        <label for="q8a">a) la fecha cuando Dios creó el mundo.</label><br>
+        <input type="radio" name="14" value="b" id="q8b">
+        <label for="q8b">b) que Dios creó el mundo por su palabra.</label><br>
+        <input type="radio" name="14" value="c" id="q8c">
+        <label for="q8c">c) detalles geográficos exactos acerca del Edén.</label><br>
+        <button type="button" onclick="guardarRespuesta('radio-14', 14)">Guardar Respuesta</button>
+    </form>
+</div>
+
+<!-- Mensaje final -->
+<div class="mensaje_final">
+    <h1 class="mensaje"></h1>
+    <p>Con la gracia de Dios, has completado esta lección y nos alegra ver tu dedicación. Recuerda que cada paso en tu aprendizaje es una bendición y una oportunidad para crecer en sabiduría. Como nos enseña Santiago 1:5:
+        <br><br>
+        "Si a alguno de ustedes le falta sabiduría, pídasela a Dios, quien da a todos abundantemente sin reproche."
+        <br><br>
+        Que el Señor continúe guiando cada uno de tus pasos y te ilumine en este camino de conocimiento. ¡Adelante, sigue estudiando y dejando que la luz de Cristo brille en tu vida!
+        <br><br>
+        ¡Bendiciones y éxito en tus próximos desafíos!
+        <br><br>
+        Ahora le puedes enviar todas las respuestas a tu tutor, si lo deseas las puedes revisar más adelante antes de enviarlas.
+    </p>
+    <button type="submit" id="enviar_respuestas1">Enviar Todas las Respuestas</button>
+</div>
+
+<!-- Botón para enviar todas las respuestas -->
+<button type="submit" id="enviar_respuestas2">Enviar Todas las Respuestas</button>

@@ -59,20 +59,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Crea el mensaje personalizado
     const mensajeHTML = `
   <h1>🥳 ! Felicitaciones  <strong>${userName} ¡ 🎉</strong></h1>
-  <p>Con la gracia de Dios, has completado esta lección y nos alegra ver tu dedicación. Recuerda que cada paso en tu aprendizaje es una bendición y una oportunidad para crecer en sabiduría. Como nos enseña Santiago 1:5:
-
-        "Si a alguno de ustedes le falta sabiduría, pídasela a Dios, quien da a todos abundantemente sin reproche."
-        
-        Que el Señor continúe guiando cada uno de tus pasos y te ilumine en este camino de conocimiento. ¡Adelante, sigue estudiando y dejando que la luz de Cristo brille en tu vida!
-        
-        ¡Bendiciones y éxito en tus próximos desafíos! <br> <br>
-        Ahora le puedes enviar todas las respuestas a tu tutor, si lo deseas las puedes revisar mas adelante antes de enviarlas. </p>
-  
+   
 `;
 
     // Inserta el mensaje en el elemento con id "mensaje"
-    document.getElementById("mensaje").innerHTML = mensajeHTML;
-
+    document.querySelectorAll(".mensaje").forEach(elemento => {
+        elemento.innerHTML = mensajeHTML;
+    });
+    
     // Función de ejemplo para el botón
     function enviarRespuestas() {
         // Aquí iría la lógica para enviar las respuestas.
