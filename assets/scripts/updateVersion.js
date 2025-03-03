@@ -1,19 +1,16 @@
-const version = "1.0.3"; // Cambia este número en cada actualización
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("script, link[rel='stylesheet']").forEach(tag => {
-        let src = tag.getAttribute("src") || tag.getAttribute("href");
-        if (src && !src.includes("updateVersion.js")) {
-            let newSrc = src.split("?")[0] + "?v=" + version;
-            tag.setAttribute(src.includes(".css") ? "href" : "src", newSrc);
-        }
-    });
-});
+(function () {
+    const version = "1.0.4"; // Cambia este número en cada actualización
+    const savedVersion = localStorage.getItem("siteVersion");
 
-// 🚀 Forzar recarga si la versión ha cambiado
-const savedVersion = localStorage.getItem("siteVersion");
-if (savedVersion !== version) {
-    console.log("🔄 Nueva versión detectada. Recargando...");
-    localStorage.setItem("siteVersion", version);
-    location.reload();
-}
+    if (savedVersion !== version) {
+        console.log("🔄 Nueva versión detectada. Limpiando caché...");
+        localStorage.setItem("siteVersion", version);
+        caches.keys().then(names => {
+            names.forEach(name => caches.delete(name)); // Borra caché
+        });
+        sessionStorage.clear(); // Borra caché de sesión
+        location.reload(true); // Recarga la página
+    }
+})();
+
