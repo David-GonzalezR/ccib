@@ -9,10 +9,7 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-.dark-mode {
-  background-color: #121212;
-  color: white;
-}
+
 
 .dark-mode .mode-btn {
   background: #333;
@@ -36,14 +33,20 @@ body {
 .dark-mode table,
 .dark-mode th,
 .dark-mode td,
+.dark-mode .notas ul,
 .dark-mode input,
-.dark-mode select
- {
+.dark-mode select,
+.dark-mode .sidebar,
+.dark-mode .sidebar ul,
+.dark-mode .sidebar h3,
+.dark-mode .video-section h2 {
   background-color: #121212;
   color: white;
 }
-.dark-mode textarea{
-  background-color: red;
+
+.dark-mode textarea {
+  background-color: #333;
+  color: white;
 }
 
 dark-mode table {
@@ -61,16 +64,12 @@ dark-mode table {
 
 /* Inputs y Textareas */
 
-.dark-mode textarea,
-.dark-mode select {
-  background-color: white;
-  color: white;
-  border: 1px solid #777;
-}
+
+
 .p-reader,
 .p_reader {
   line-height: 1.9;
-padding: 0 10px;
+  padding: 0 10px;
 }
 
 html {
@@ -116,7 +115,7 @@ h6 {
   left: 35%;
   top: 0.2em;
   line-height: 2;
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .header-left {
@@ -350,7 +349,7 @@ hr {
   top: 50%;
   color: white;
   width: 20rem;
-z-index: 1000;
+  z-index: 1000;
   padding: 10px;
   transition: transform 0.5s ease-in-out;
   transform: translateX(-318%);
@@ -436,6 +435,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   max-width: 100%;
+  margin-bottom: 1.6rem;
 }
 
 th,
@@ -645,7 +645,20 @@ body {
 }
 
 .mapa {
-  margin: 0.937rem 0.625rem;
+  margin: 1rem auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mapa:hover {
+  transform: scale(2);
+  /* Aumenta el tamaño al hacer hover */
+
+  z-index: 1000;
+}
+
+.container_question {
+  display: flex;
+  justify-content: space-between;
 }
 
 .superTitulo {
@@ -890,21 +903,21 @@ body {
   }
 
   .size-font {
-     display:block;
-    top: 50%;      
+    display: block;
+    top: 50%;
     transition: transform 0.5s ease-in-out;
     transform: translateX(-135%);
-    
+
   }
-  
+
   /* Cuando pasas el mouse sobre el div, se desplaza hacia la izquierda */
- 
+
   /* Flecha al lado derecho */
-  .size-font::before {    
-    
+  .size-font::before {
+
     top: 25%;
-    right: -30px;     
- 
+    right: -30px;
+
     transform: translateY(-1%);
   }
 }

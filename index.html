@@ -9,8 +9,22 @@
 
 
     <script src="assets/scripts/header_responsive.js" defer></script>
-    
+    <script src="updateVersion.js?v=1.0.2"></script>
+
 </head>
+
+<script>
+    const version = "1.0.1"; // Cambia esto cuando hagas actualizaciones
+    
+    document.querySelectorAll("script, link[rel='stylesheet']").forEach(tag => {
+        let src = tag.getAttribute("src") || tag.getAttribute("href");
+        if (src) {
+            let newSrc = src.split("?")[0] + "?v=" + version;
+            tag.setAttribute(src.includes(".css") ? "href" : "src", newSrc);
+        }
+    });
+    </script>
+    
 <body>
     
     <nav class="nav-toggle">

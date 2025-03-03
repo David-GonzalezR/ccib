@@ -13,7 +13,7 @@
     <script src="assets/scripts/menu.js " defer></script>
     <script src="assets/scripts/enviar-respuestas.js" defer></script>
     <script src="assets/scripts/mensajefinalleccion.js" defer></script>
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -129,7 +129,7 @@
 
             <!-- introduccion a la unidad -->
             <section class="video-section ">
-                <h2 id="Introduccion">Clase 1: Introducción a LA HISTORIA DE LOS ORÍGENES</h2>
+                <h2>Clase 1: Introducción a LA HISTORIA DE LOS ORÍGENES</h2>
 
                 <!-- Video (puedes cambiar el src por un enlace de YouTube o archivo local) -->
                 <div class="video-container Introduccion">
@@ -242,7 +242,9 @@
 
                             <textarea name="q2" rows="3" placeholder="Escribe tu respuesta aquí "
                                 id="respuesta-1"></textarea>
-                            <button type="button" id="guardar-1">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-1', 1)">Guardar
+                                Respuesta</button>
+
                         </form>
                         <br>
                         <p class="p_reader"> 2. Escriba las tres diferentes formas en que Dios nos habla.</p>
@@ -250,8 +252,10 @@
 
                             <textarea name="q2" rows="3" placeholder="Escribe tu respuesta aquí"
                                 id="respuesta-2"></textarea>
-                            <button type="button" id="guardar-2" data-preguntaId="1" data-unidad="1">Guardar
+                            <button type="button" onclick="guardarRespuesta('respuesta-2', 2)">Guardar
                                 Respuesta</button>
+
+                            
                         </form>
                     </div>
 
@@ -297,7 +301,7 @@
 
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p class="p_reader">3 Encierre en un círculo la letra correspondiente a cada declaración que
+                        <p class="p_reader">3. Encierre en un círculo la letra correspondiente a cada declaración que
                             esté en armonía con
                             la verdad en cuanto a la inspiración verbal de la Biblia.</p>
                         <form id="formulario-3" data-formulario="3">
@@ -312,7 +316,8 @@
                             <label><input type="checkbox" name="avance" value="avance4"> d) La Biblia contiene los
                                 mejores pensamientos del hombre expresados en forma hermosa e inspiradora.</label>
                         </form>
-                        <button type="button" id="guardar-3">Guardar Respuesta</button>
+                        <button type="button" onclick="guardarRespuesta('formulario-3', 3)">Guardar Respuesta</button>
+
                     </div>
 
 
@@ -351,7 +356,9 @@
                         <form>
                             <textarea name="q2" rows="3" placeholder="Escribe tu respuesta aquí"
                                 id="respuesta-4"></textarea>
-                            <button type="button" id="guardar-4">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-4', 4)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
                     <h1>DIOS HABLA A TRAVÉS DEL ANTIGUO TESTAMENTO</h1>
@@ -383,7 +390,7 @@
                         <p class="p_reader">5. En su cuaderno, escriba una pequeña descripción de lo que dicen las
                             siguientes citas
                             bíblicas acerca del Antiguo Testamento o cómo fue usado.</p>
-                        <form>
+                        <form id="formulario-5">
 
                             <label for="avance1">a) Mateo 22:29, 43-45</label><br>
                             <label for="avance2">b) Lucas 24:25-27</label><br>
@@ -392,7 +399,8 @@
                             <label for="avance3">e) 2 Pedro 1:20-21</label><br>
                             <textarea id="respuesta-5" name="q2" rows="3"
                                 placeholder="a) Tu respuesta &#10;b)Tu respuesta"></textarea>
-                            <button type="button" id="guardar-5">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('formulario-5', 5)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -423,7 +431,9 @@
 
                             <textarea id="respuesta-6" name="q2" rows="3"
                                 placeholder="Escribe las descripciones aquí"></textarea>
-                            <button type="button" id="guardar-6">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-6', 6)">Guardar
+                                Respuesta</button>
+
                             <br>
                         </form>
                         <p class="p_reader">7. Encierre en un círculo la letra correspondiente a cada declaración que da
@@ -442,7 +452,8 @@
                             <label><input type="checkbox" name="avance" value="avance4"> d) No nos fue dado simplemente
                                 por la voluntad del hombre.</label>
 
-                            <button type="button" id="guardar-7">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('formulario-7', 7)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -488,7 +499,7 @@
                         <p class="p_reader">8. ¿Cuál es la oración correcta que describe cómo el Antiguo Testamento
                             llegó hasta nosotros?
                         </p>
-                        <form id="formulario-8">
+                        <form id="radio-8">
                             <input type="radio" name="8" value="a" id="q8a">
                             <label for="q8a">a) La primera traducción del Antiguo Testamento a otro idioma diferente del
                                 hebreo fue realizada en el siglo IV d.C. Las copias actuales en español son copias de
@@ -504,7 +515,7 @@
                                 registradas por escrito. Estos escritos fueron preservados fielmente, copiados y
                                 trasmitidos a nosotros por eruditos fieles.</label><br>
 
-                            <button type="button" id="guardar-8">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('radio-8', 8)">Guardar Respuesta</button>
                         </form>
 
                     </div>
@@ -540,7 +551,9 @@
                         <form>
                             <textarea id="respuesta-9" name="q2" rows="3"
                                 placeholder="Escribe las respuestas aquí"></textarea>
-                            <button type="button" id="guardar-9">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-9', 9)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -608,7 +621,9 @@
                             <textarea id="respuesta-10" name="q2" rows="3"
                                 placeholder="Escribe asi:&#10;a con 1&#10;b con 2&#10"></textarea>
 
-                            <button type="button" id="guardar-10">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-10', 10)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -814,7 +829,8 @@
                             </label><br>
                             <input type="checkbox" name="q3[]" value="avance3" id="avance3">
                             <label for="q1c">c. Se debe estudiar el libro de Amós antes que el de Daniel.</label><br>
-                            <button type="button" id="guardar-11">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('formulario-11', 11)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -1177,7 +1193,9 @@
                             <textarea id="respuesta-12" name="q2" rows="3"
                                 placeholder="Escribe asi:&#10;a con 1&#10;b con 2&#10"></textarea>
 
-                            <button type="button" id="guardar-12">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-12', 12)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -1204,7 +1222,7 @@
                             <label><input type="checkbox" name="avance" value="avance3">c. A Dios se la presenta en
                                 Génesis como el creador.</label> <br>
                         </form>
-                        <button type="button" id="guardar-13">Guardar Respuesta</button>
+                        <button type="button" onclick="guardarRespuesta('formulario-13', 13)">Guardar Respuesta</button>
                     </div>
 
                     <h2>Eventos de Génesis</h2>
@@ -1243,7 +1261,7 @@
                         <p class="p_reader">3. La importancia de la narración del Génesis acerca de la creación radica
                             en afirmar:
                         </p>
-                        <form id="formulario-14">
+                        <form id="radio-14">
                             <input type="radio" name="14" value="a" id="q8a">
                             <label for="q8a">a) la fecha cuando Dios creó el mundo.</label><br>
 
@@ -1253,7 +1271,7 @@
                             <input type="radio" name="14" value="c" id="q8c">
                             <label for="q8c">c) detalles geográficos exactos acerca del Edén.</label><br>
 
-                            <button type="button" id="guardar-14">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('radio-14', 14)">Guardar Respuesta</button>
                         </form>
 
                     </div>
@@ -1295,7 +1313,7 @@
                             <label><input type="checkbox" name="avance" value="avance3">c. Algunas personas inconversas
                                 creen que la vida comenzó en la región llamada media luna fértil.</label> <br>
                         </form>
-                        <button type="button" id="guardar-15">Guardar Respuesta</button>
+                        <button type="button" onclick="guardarRespuesta('formulario-15', 15)">Guardar Respuesta</button>
                     </div>
 
 
@@ -1326,7 +1344,9 @@
                         <form>
                             <textarea id="respuesta-16" name="q2" rows="3"
                                 placeholder="Escribe las respuestas aquí"></textarea>
-                            <button type="button" id="guardar-16">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-16', 16)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
                     <h1 class="superTitulo" style="text-align: center;">LA GRAN TRAGEDIA HUMANA</h1>
@@ -1358,7 +1378,9 @@
                         <form>
                             <textarea id="respuesta-17" name="q2" rows="3"
                                 placeholder="Escribe asi:&#10;a) mi respuesta&#10;b) mi repuesta"></textarea>
-                            <button type="button" id="guardar-17">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-17', 17)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -1387,7 +1409,9 @@
 
                             <textarea id="respuesta-18" name="q2" rows="3"
                                 placeholder="Escribe asi:&#10;1 = a&#10;2 = c"></textarea>
-                            <button type="button" id="guardar-18">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-18', 18)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -1419,7 +1443,9 @@
                         <form>
                             <textarea id="respuesta-19" name="q2" rows="3"
                                 placeholder="Escribe asi:&#10;a. mi respuesta&#10;b. mi respuesta"></textarea>
-                            <button type="button" id="guardar-19">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('respuesta-19', 19)">Guardar
+                                Respuesta</button>
+
                         </form>
                     </div>
 
@@ -1435,22 +1461,25 @@
                         propósitos de Dios, cayeron en una profunda esclavitud.
 
                     </p>
-                    <!-- arribaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-                     -->
 
 
                     <div class="question">
                         <h4>Aplicación</h4>
                         <p>9. Lea el Salmo 8:4 y Hebreos 2:8. Encierre en un círculo la letra correspondiente a cada
                             declaración CORRECTA.</p>
-                        <form>
-                            <input type="checkbox" name="pregunta_9" id="opcion_a"> a) El propósito de Dios para la
-                            humanidad consistió en que gobernara todas las cosas.<br>
-                            <input type="checkbox" name="pregunta_9" id="opcion_b"> b) El hombre gobierna ahora todas
-                            las cosas.<br>
-                            <input type="checkbox" name="pregunta_9" id="opcion_c"> c) Todo ser humano está cumpliendo
-                            hoy los propósitos de Dios.<br>
-                            <button type="button" id="guardar_9">Guardar Respuesta</button>
+
+
+                        <form id="formulario-20" data-formulario="20">
+                            <label><input type="checkbox" name="avance" value="avance1"> a) El propósito de Dios para la
+                                humanidad consistió en que gobernara todas las cosas. </label> <br>
+                            <label><input type="checkbox" name="avance" value="avance2">b) El hombre gobierna ahora
+                                todas
+                                las cosas.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance3"> c) Todo ser humano está
+                                cumpliendo
+                                hoy los propósitos de Dios.</label> <br>
+                            <button type="button" onclick="guardarRespuesta('formulario-20', 20)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -1488,18 +1517,20 @@
                         <p>10. Encierre en un círculo la letra correspondiente a cada declaración que describa un
                             resultado
                             de la desobediencia de Adán y Eva.</p>
-                        <form>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10a"> a) Adán y Eva continuaron en
-                            compañerismo estrecho con Dios.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10b"> b) La humanidad quedó sujeta a la
-                            muerte física.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10c"> c) Adán y Eva fueron expulsados
-                            del huerto.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10d"> d) Fracasaron los propósitos de
-                            Dios para la humanidad.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10e"> e) A Adán y a Eva les fue
-                            permitido comer del árbol de la vida.<br>
-                            <button type="button" id="guardar_10">Guardar Respuesta</button>
+                        <form id="formulario-21" data-formulario="21">
+                            <label><input type="checkbox" name="avance" value="avance1">a) Adán y Eva continuaron en
+                                compañerismo estrecho con Dios. </label> <br>
+                            <label><input type="checkbox" name="avance" value="avance2">b) La humanidad quedó sujeta a
+                                la
+                                muerte física.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance3"> c) Adán y Eva fueron expulsados
+                                del huerto.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance4"> d) Fracasaron los propósitos de
+                                Dios para la humanidad.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance5"> e) A Adán y a Eva les fue
+                                permitido comer del árbol de la vida.</label> <br>
+                            <button type="button" onclick="guardarRespuesta('formulario-21', 21)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -1545,9 +1576,9 @@
                             propias palabras el principio espiritual que nos enseña este incidente.</p>
 
                         <form>
-                            <textarea name="[nombre-unico]" rows="3" placeholder="Escribe tu respuesta aquí"
-                                id="[id-unico]"></textarea>
-                            <button type="button" id="[id-guardar]">Guardar Respuesta</button>
+                            <textarea rows="3" placeholder="Escribe tu respuesta aquí" id="respuesta-22"></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-22', 22)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
@@ -1584,31 +1615,308 @@
                         <p>12. La importancia de Set en los planes de Dios para restaurar las relaciones rotas del
                             hombre
                             con Dios, reside en que:</p>
-                        <form>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10a"> a) no experimentó muerte.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10b">b) fue el antepasado humano de
-                            Cristo.<br>
-                            <input type="checkbox" name="pregunta_10" id="opcion_10c"> c) pudo pagar por el pecado del
-                            hombre.<br>
+                        <form id="formulario-23" data-formulario="23">
+                            <label><input type="checkbox" name="avance" value="avance1"> a) no experimentó muerte.
+                            </label> <br>
+                            <label><input type="checkbox" name="avance" value="avance2">b) fue el antepasado humano de
+                                Cristo.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance3">c) pudo pagar por el pecado del
+                                hombre.</label> <br>
 
-                            <button type="button" id="guardar_10">Guardar Respuesta</button>
+                            <button type="button" onclick="guardarRespuesta('formulario-23', 23)">Guardar
+                                Respuesta</button>
                         </form>
                         <p>13. Compare Génesis 5 y Lucas 3:36-38. Once antepasados de Jesús se mencionan en ambos
                             pasajes,
                             contando desde Adán hasta Sem. Escriba en orden el nombre de estos
                             antepasdos. Comience con Adán como número 1 y termine con Sem como número 11.</p>
 
-                            <form>
-                                <textarea name="[nombre-unico]" rows="3" placeholder="Escribe tu respuesta aquí" id="[id-unico]"></textarea>
-                                <button type="button" id="[id-guardar]">Guardar Respuesta</button>
-                            </form>
+                        <form>
+                            <textarea rows="3" placeholder="Escribe tu respuesta aquí" id="respuesta-24"></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-24', 24)">Guardar
+                                Respuesta</button>
+                        </form>
+                    </div>
+                    <!-- arribaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ sin
+                     -->
+                    <h2>El Diluvio</h2>
+
+                    <h6><strong>Objetivo 7.</strong> Reconocer declaraciones que expresan verdades concernientes al
+                        diluvio.</h6>
+
+                    <p class="p-reader">En su lista de los antepasados terrenales de Jesús usted citó a Enoc. Note cómo
+                        se describe su vida en Génesis 5:21-24.
+                        Compare esta descripción con la de Hebreos 11:5-6. ¡Enoc no experimentó muerte! Vivió en amistad
+                        con Dios y su vida tuvo un fin especial. Dios se lo llevó.</p>
+
+                    <p class="p-reader">El nieto de Enoc fue Lamec, y el hijo de Lamec fue Noé. Durante los días de Noé
+                        aumentó la impiedad de los hombres. Abundó la violencia, la maldad y la corrupción. Dios decidió
+                        destruir a todos los impíos.</p>
+
+                    <p class="p-reader">Pero Dios estaba complacido con Noé. Durante 120 años, a través de Noé, él
+                        advirtió a todos que iba a destruir la tierra con un diluvio. Únicamente Noé continuó agradando
+                        a Dios y vivió aceptablemente en comunión con El.</p>
+
+                    <p class="p-reader">Dios le ordenó a Noé que construyera un arca (algo semejante a una embarcación).
+                        Noé obedeció, y la construyó de las proporciones exactas que Dios le dio. Los científicos de hoy
+                        estarían de acuerdo en que un arca como la que Noé construyó estaría en condiciones de navegar y
+                        tendría espacio suficiente para todos los animales. Al construir el arca, Noé ejercitó la fe en
+                        la Palabra de Dios, la cual no pudo comprender por medio del razonamiento humano. Hebreos 11:7
+                        dice que “fue advertido por Dios acerca de cosas que aún no se veían”.</p>
+
+                    <p class="p-reader">Noé, su esposa, sus tres hijos y sus esposas y una pareja de cada clase de
+                        animal y ave entraron en el arca como Dios lo había mandado. Entonces envió Dios el diluvio. El
+                        mundo fue juzgado por Dios y la raza humana pecadora fue destruida. Como por un año
+                        aproximadamente Noé, su familia y todas las criaturas que se habían salvado tuvieron que
+                        quedarse dentro del arca. Después el agua se retiró y la humanidad afrontó una nueva
+                        oportunidad.</p>
+
+                    <div class="question">
+                        <h4>Aplicación</h4>
+                        <p>14. Lea el relato del diluvio en Génesis 6-8. Después, encierre en un círculo la letra
+                            correspondiente a cada declaración CORRECTA.</p>
+                        <form id="formulario-25" data-formulario="25">
+                            <label><input type="checkbox" name="avance" value="avance1"> a) Fue por fe que Noé creyó la
+                                advertencia de Dios.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance2"> b) Noé pidió que Dios no
+                                destruyera a los hombres.</label> <br>
+                            <label><input type="checkbox" name="avance" value="avance3"> c) Noé mostró fe en Dios al
+                                construir el arca.</label> <br>
+                            <button type="button" onclick="guardarRespuesta('formulario-25', 25)">Guardar
+                                Respuesta</button>
+                        </form>
                     </div>
 
+                    <h2>Nuevo comienzo</h2>
 
+                    <h6><strong>Objetivo 8.</strong> Identificar hechos relacionados con el establecimiento de los
+                        descendientes de Noé.</h6>
 
-                    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    <p class="p-reader">Noé principió la nueva civilización construyendo un altar y ofreciendo muchos
+                        sacrificios. Entonces Dios hizo un pacto o promesa con Noé, concerniente al futuro de sus
+                        relaciones con la humanidad. La forma en que Dios actuó nos muestra cuál fue su propósito
+                        principal al juzgar al mundo. El propósito consistió en que Él podría restaurar las relaciones
+                        con el hombre.</p>
+
+                    <div class="question">
+                        <h4>Aplicación</h4>
+                        <p class="p-reader">15. Lea Génesis 9 y conteste estas preguntas:.</p>
+                        <form>
+                            <p class="p-reader">a. ¿Cuál fue la promesa de Dios (vv. 8-11)? <br>
+                                b. ¿Cuál fue la señal de Dios (vv. 12-17)?</p>
+                            <textarea rows="3"
+                                placeholder="Escribe tu respuesta aquí&#10;a.mi respuesta&#10;b.mi respuesta"
+                                id="respuesta-26"></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-26', 26)">Guardar
+                                Respuesta</button>
+                        </form>
+                    </div>
+
+                    <p class="p-reader">
+                        Después que Noé y su familia habitaron la tierra, ocurrió un incidente que se describe en
+                        Génesis 9:20-27. El incidente nos muestra que aun un hombre justo como Noé puede ser tentado y
+                        está expuesto a caer en pecado. También revela el carácter de los tres hijos de Noé: Sem, Cam y
+                        Jafet. Cam trató a su padre con falta de respeto, mientras que Sem y Jafet actuaron
+                        respetuosamente. <br>
+                        Sobre Canaán, hijo de Cam, cayó la maldición profética de Noé (vrs. 25-27). Siglos más tarde,
+                        los cananitas recibieron un terrible castigo cuando los israelitas ocuparon su tierra.
+                        Génesis 10:1-32 describe el lugar que ocuparon los descendientes de los hijos de Noé. Los
+                        científicos de nuestros días, que conocen la historia de la humanidad, han encontrado más y más
+                        evidencias que comprueban la autenticidad de esta descripción. Esta es la única explicación
+                        adecuada con que contamos de cómo la gente se esparció por todo el mundo.
+                        El siguiente cuadro muestra a los tres hijos Noé, sus nietos y varias de las naciones que
+                        procedieron de sus descendientes
+
+                    </p>
+                    <h2>Los Descendientes de Noé y sus Naciones</h2>
+                    <table>
+                        <tr>
+                            <th>Noé</th>
+                            <th>Descendientes</th>
+                            <th>Naciones</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="8">Jafet (Raza aria)</td>
+                            <td>Gomer</td>
+                            <td>Celtas</td>
+                        </tr>
+                        <tr>
+                            <td>Magog</td>
+                            <td>Escitas</td>
+                        </tr>
+                        <tr>
+                            <td>Madai</td>
+                            <td>Medos</td>
+                        </tr>
+                        <tr>
+                            <td>Javán</td>
+                            <td>Griegos</td>
+                        </tr>
+                        <tr>
+                            <td>Tubal</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Mesec</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Tracio</td>
+                            <td>Tracios</td>
+                        </tr>
+                        <tr>
+                            <td>Cus</td>
+                            <td>Etiopía</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Cam (Raza turania)</td>
+                            <td>Mizraim</td>
+                            <td>Egipto</td>
+                        </tr>
+                        <tr>
+                            <td>Fut</td>
+                            <td>Libia</td>
+                        </tr>
+                        <tr>
+                            <td>Canaán</td>
+                            <td>Palestina</td>
+                        </tr>
+                        <tr>
+                            <td>Elam</td>
+                            <td>Elamitas</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Sem (Raza semita)</td>
+                            <td>Asur</td>
+                            <td>Asirios</td>
+                        </tr>
+                        <tr>
+                            <td>Arfaxad</td>
+                            <td>Caldeos</td>
+                        </tr>
+                        <tr>
+                            <td>Lud</td>
+                            <td>Lidios</td>
+                        </tr>
+                        <tr>
+                            <td>Aram</td>
+                            <td>Sirios</td>
+                        </tr>
+                    </table>
+
+                    <p class="p-reader">
+                        Los hijos de Jafet se asentaron desde el área de los mares Negro y Caspio hacia el Oeste hasta
+                        España (Génesis 10:2-15). Probablemente los griegos y los pueblos germánicos descienden de él.
+                        Tres de los hijos de Cam fueron al Africa (vrs. 6-14). Más tarde se extendieron hacía el norte,
+                        a Sinar y Asiria. Edificaron ciudades como Nínive, Babel y Acad. Canaán, cuarto hijo
+                        de Cam, se asentó a lo largo del Mediterráneo extendiéndose desde Sidón hasta Gerar, cerca de
+                        Gaza. Los cananitas hablaban un idioma similar a los descendientes de Sem, aunque eran
+                        descendientes de Cam. <br>
+                        Los descendientes de Sem ocuparon el área norte del golfo Pérsico (vv. 21-31). Fueron conocidos
+                        como semitas o raza semítica. Elam, Asur y Aram son lugares nombrados y relacionados con los
+                        semitas.
+                        El siguiente mapa muestra el área general en la cual se asentaron los descendientes de Jafet,
+                        Cam y Sem.
+                    </p>
+                    <img src="assets/img/descendencia-noe.jpg" alt="" class="mapa">
+                    <div class="question">
+                        <h4>Aplicación</h4>
+                        <p class="p-reader">16. ¿Cuál fue la razón principal por la que Dios castigó al mundo con el
+                            diluvio?</p>
+                        <form>
+                            <textarea rows="3" placeholder="Escribe tu respuesta aquí" id="respuesta-27"></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-27', 27)">Guardar
+                                Respuesta</button>
+                        </form>
+                    
+
+                    <h3>Emparejamiento de descendientes y lugares/naciones</h3>
+                    <p>17. Revise el cuadro, el mapa y las descripciones sobre el asentamiento de los descendientes de Noé. Luego, asocie cada hijo de Noé con el lugar (a-i) y la nación (j-r) correspondiente, escribiendo el número del hijo frente a cada opción.</p>
+                    <div class="container_question">
+                        <div class="column_question">
+                            <ul>
+                                <li>a. Acad</li>
+                                <li>b. África</li>
+                                <li>c. Aram</li>
+                                <li>d. Asur</li>
+                                <li>e. Mar Negro</li>
+                                <li>f. Mar Caspio</li>
+                                <li>g. Nínive</li>
+                                <li>h. Sinar</li>
+                                <li>i. España</li>
+                            </ul>
+                        </div>
+                        <div class="column_question">
+                            <ul>
+                                <li>j. Asirios</li>
+                                <li>k. Celtas</li>
+                                <li>l. Caldeos</li>
+                                <li>m. Elamitas</li>
+                                <li>n. Etíopes</li>
+                                <li>o. Libios</li>
+                                <li>p. Medos</li>
+                                <li>q. Cananeos</li>
+                                <li>r. Escitas</li>
+                            </ul>
+                        </div>
+                        <div class="column_question">
+                            <h4>Seleccione el descendiente:</h4>
+                            <ul>
+                                <li>1) Sem</li>
+                                <li>2) Hijos de Cam</li>
+                                <li>3) Jafet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form>
+                        <textarea id="respuesta-28" rows="5"
+                            placeholder="Escribe todas tus respuestas aquí&#10;a con 1&#10;b con 3..."></textarea>
+                        <button type="button" onclick="guardarRespuesta('respuesta-28', 28)">Guardar Respuesta </button>
+                    </form>
+
+                </div>
+                    <h2>Abraham y sus descendientes</h2>
+                    <h6><strong>Objetivo 9.</strong> Seleccionar una razón de la importancia especial de Abraham en un
+                        estudio del Antiguo Testamento.</h6>
+                   
+                    <p class="p-reader">
+                        El Espíritu Santo ahora llama nuestra atención a los semitas (Génesis 11:10-32). Se nos da un
+                        recuento de diez generaciones comenzando con la familia de Sem y terminando con la familia de
+                        Taré, que emigró de Ur a Harán. Esta es la familia a la que perteneció Abram (más tarde llamado
+                        Abraham). Abraham ofrece el ejemplo de un hombre que actuó según la revelación de la creación
+                        como se describe en el Salmo 19. Dios le cumplió sus promesas a Abraham y le guió “por fe y para
+                        fe” (Romanos 1:17).
+                        La simiente de Abraham o sus descendientes (tanto naturales como espirituales) ocupan el centro
+                        de interés a través del resto de la Biblia. A ellos se los llama el pueblo de Dios.
+
+                    </p>
+                    <div class="question">
+                        <h4>Aplicación</h4>
+                        <p class="p_reader">18.	En un estudio del Antiguo Testamento la vida de Abraham es de suma importancia porque sus descendientes:
+                        </p>
+                        <form id="radio-29">
+                            <input type="radio" name="29" value="a" id="q8a">
+                            <label for="q8a">a)	fueron muy numerosos.</label><br>
+
+                            <input type="radio" name="29" value="b" id="q8b">
+                            <label for="q8b">b)	fueron llamados los semitas.</label><br>
+
+                            <input type="radio" name="29" value="c" id="q8c">
+                            <label for="q8c">c)	constituían el pueblo de Dios.</label><br>
+
+                            <input type="radio" name="29" value="d" id="q8c">
+                            <label for="q8c">d)	pueden comprobar que descienden de Sem.</label><br>
+
+                            <button type="button" onclick="guardarRespuesta('radio-29', 29)">Guardar Respuesta</button>
+                        </form>
+
+                    </div>
+                    
+ <!--abajo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                      -->
-
 
                     <div class="title_leccio">
                         <span class="number_leccion">LECCIÓN</span>
@@ -1653,8 +1961,9 @@
                         </p>
                         <form>
                             <textarea name="q1" rows="3" placeholder="Escribe tu respuesta aquí"
-                                id="respuesta-1"></textarea>
-                            <button type="button" id="guardar-1">Guardar Respuesta</button>
+                                id="respuesta-24"></textarea>
+                            <button type="button" onclick="guardarRespuesta('respuesta-24', 24)">Guardar
+                                Respuesta</button>
                         </form>
                     </div>
 
