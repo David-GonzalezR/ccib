@@ -1,4 +1,4 @@
-const version = "1.0.2"; // Cambia este número en cada actualización
+const version = "1.0.3"; // Cambia este número en cada actualización
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("script, link[rel='stylesheet']").forEach(tag => {
@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// 🚀 Forzar recarga si la versión ha cambiado
 const savedVersion = localStorage.getItem("siteVersion");
-
 if (savedVersion !== version) {
     console.log("🔄 Nueva versión detectada. Recargando...");
     localStorage.setItem("siteVersion", version);
