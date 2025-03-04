@@ -32,8 +32,8 @@ function enviarRespuestas(idBoton, descripcion, rango) {
 
         // Validar si se han contestado todas las preguntas en el rango
         if (contadorRespuestas < totalEsperado -1) {
-            alert(`Debes responder todas las ${totalEsperado -1 } preguntas antes de enviar.`);
-            alert(contadorRespuestas, totalEsperado )
+            alert(`Hay preguntas que no respondiste o no guardaste, debes responder  las ${totalEsperado -1 } preguntas antes de enviar.`);
+            
             return;
         }
 
