@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Tiendas, Templos y Palacios</title>
-    <link rel="stylesheet" href="assets/styles/styles_lecciones.css?v=1.0.7">
-    <link rel="stylesheet" href="assets/styles/reset.css?v=1.0.7">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1.0.7   "> 
+    <link rel="stylesheet" href="assets/styles/styles_lecciones.css?v=1.0.8">
+    <link rel="stylesheet" href="assets/styles/reset.css?v=1.0.8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?v=1.0.8   "> 
     
     
     
@@ -20,10 +20,10 @@
     
 
     <!-- scrips -->
-    <script src="assets/scripts/menu.js?v=1.0.7 " defer></script>
-    <script src="assets/scripts/enviar-respuestas.js?v=1.0.7" defer></script>
-    <script src="assets/scripts/mensajefinalleccion.js?v=1.0.7" defer></script>
-    <script src="assets/scripts/script.js?v=1.0.7" defer></script>
+    <script src="assets/scripts/menu.js?v=1.0.8 " defer></script>
+    <script src="assets/scripts/enviar-respuestas.js?v=1.0.8" defer></script>
+    <script src="assets/scripts/mensajefinalleccion.js?v=1.0.8" defer></script>
+    <script src="assets/scripts/script.js?v=1.0.8" defer></script>
 </head>
 
 <body>
@@ -311,7 +311,7 @@
 
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p class="p_reader">3. Encierre en un círculo la letra correspondiente a cada declaración que
+                        <p class="p_reader">3. Marque la letra correspondiente a cada declaración que
                             esté en armonía con
                             la verdad en cuanto a la inspiración verbal de la Biblia.</p>
                         <form id="formulario-3" data-formulario="3">
@@ -409,7 +409,7 @@
                             <label for="avance3">e) 2 Pedro 1:20-21</label><br>
                             <textarea id="respuesta-5" name="q2" rows="3"
                                 placeholder="a) Tu respuesta &#10;b)Tu respuesta"></textarea>
-                            <button type="button" onclick="guardarRespuesta('formulario-5', 5)">Guardar
+                            <button type="button" onclick="guardarRespuesta('respuesta-5', 5)">Guardar
                                 Respuesta</button>
                         </form>
                     </div>
@@ -446,7 +446,7 @@
 
                             <br>
                         </form>
-                        <p class="p_reader">7. Encierre en un círculo la letra correspondiente a cada declaración que da
+                        <p class="p_reader">7. Marque la letra correspondiente a cada declaración que da
                             una razón de
                             por qué debemos aceptar el Antiguo Testamento como mensaje de Dios. (Note que todas las
                             declaraciones son verdades,
@@ -826,7 +826,7 @@
                     </table>
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p class="p_reader">11. Encierre en un círculo la letra correspondiente a cada declaración
+                        <p class="p_reader">11. Marque la letra correspondiente a cada declaración
                             CORRECTA que se
                             refiera al estudio cronológico del Antiguo Testamento.</p>
                         <form id="formulario-11" data-formulario="11">
@@ -868,7 +868,7 @@
                             Ahora le puedes enviar todas las respuestas a tu tutor, si lo deseas las puedes revisar mas
                             adelante antes de enviarlas. </p> <br><br>
 
-                        <button type="submit" id="enviar_respuestas1" style="margin: 0 auto">Enviar Todas las Respuestas </button>
+                        <button type="submit" id="enviar_respuestas1" class="enviar_respuestas">Enviar Todas las Respuestas </button>
 
                     </div>
 
@@ -878,7 +878,7 @@
                     <section>
 
 
-                        <form id="autoexamen2" class="autoexamen">
+                        <form id="autoexamen1" class="autoexamen">
                             <h2>Autoexamen</h2>
                             <p class="instrucciones">
                                 Después que haya repasado esta lección, tome el autoexamen. Luego compruebe sus
@@ -935,7 +935,7 @@
 
                             <!-- Pregunta 4 -->
                             <div class="question">
-                                <p class="p_reader"><strong>4.</strong> Encierre en un círculo la letra correspondiente
+                                <p class="p_reader"><strong>4.</strong> Marque la letra correspondiente
                                     a cada
                                     declaración <strong>CORRECTA</strong>:</p>
                                 <div class="options">
@@ -993,7 +993,7 @@
 
                             <!-- Pregunta 7 -->
                             <div class="question">
-                                <p class="p_reader"><strong>7.</strong> Encierre en un círculo la letra correspondiente
+                                <p class="p_reader"><strong>7.</strong> Marque la letra correspondiente
                                     a cada acto con
                                     el cual se demuestra que el Antiguo Testamento nos fue transmitido fielmente:</p>
                                 <div class="options">
@@ -1015,7 +1015,7 @@
 
                             <!-- Pregunta 8 -->
                             <div class="question">
-                                <p class="p_reader"><strong>8.</strong> Encierre en un círculo la letra correspondiente
+                                <p class="p_reader"><strong>8.</strong> Marque la letra correspondiente
                                     a cada
                                     declaración con la cual se indica que el Antiguo Testamento es un mensaje personal
                                     para nosotros:</p>
@@ -1036,7 +1036,7 @@
                             </div>
 
                             <div style="text-align: center;">
-                                <button class="enviarAutoexamen" data-examen="autoexamen1">Enviar Autoexamen</button>
+                                <button class="enviarAutoexamen enviar_respuestas" data-examen="autoexamen1">Enviar Autoexamen</button>
                             </div>
                         </form>
                     </section>
@@ -1189,31 +1189,31 @@
                                 <tbody>
                                     <tr>
                                         <td>a) Génesis 1:1-25</td>
-                                        <td>1) Mundo</td>
+                                        <td>1) Familia</td>
                                     </tr>
                                     <tr>
                                         <td>b) Génesis 1:26-3</td>
-                                        <td>2) Raza humana</td>
+                                        <td>2) Naciones del Mundo</td>
                                     </tr>
                                     <tr>
                                         <td>c) Génesis 3:1-7</td>
-                                        <td>3) Pecado</td>
+                                        <td>3) Mundo</td>
                                     </tr>
                                     <tr>
                                         <td>d) Génesis 3:8-24</td>
-                                        <td>4) Redención</td>
+                                        <td>4) Civilización</td>
                                     </tr>
                                     <tr>
                                         <td>e) Génesis 4:1-15</td>
-                                        <td>5) Familia</td>
+                                        <td>5) Raza humana</td>
                                     </tr>
                                     <tr>
                                         <td>f) Génesis 4:16-9:29</td>
-                                        <td>6) Civilización</td>
+                                        <td>6) Pecado</td>
                                     </tr>
                                     <tr>
                                         <td>g) Génesis 10-11</td>
-                                        <td>6) Naciones del mundo</td>
+                                        <td>6) Redención</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1493,7 +1493,7 @@
 
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p>9. Lea el Salmo 8:4 y Hebreos 2:8. Encierre en un círculo la letra correspondiente a cada
+                        <p>9. Lea el Salmo 8:4 y Hebreos 2:8. Marque la letra correspondiente a cada
                             declaración CORRECTA.</p>
 
 
@@ -1542,7 +1542,7 @@
 
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p>10. Encierre en un círculo la letra correspondiente a cada declaración que describa un
+                        <p>10. Marque la letra correspondiente a cada declaración que describa un
                             resultado
                             de la desobediencia de Adán y Eva.</p>
                         <form id="formulario-21" data-formulario="21">
@@ -1703,7 +1703,7 @@
 
                     <div class="question">
                         <h4>Aplicación</h4>
-                        <p>14. Lea el relato del diluvio en Génesis 6-8. Después, encierre en un círculo la letra
+                        <p>14. Lea el relato del diluvio en Génesis 6-8. Después, Marque la letra
                             correspondiente a cada declaración CORRECTA.</p>
                         <form id="formulario-25" data-formulario="25">
                             <label><input type="checkbox" name="avance" value="avance1"> a) Fue por fe que Noé creyó la
@@ -1966,7 +1966,7 @@
                             revisarlas antes de enviarlas.
                         </p>
 
-                        <button type="submit" id="enviar_respuestas2">Enviar Todas las Respuestas </button>
+                        <button type="submit" id="enviar_respuestas2" class="enviar_respuestas">Enviar Todas las Respuestas </button>
 
                     </div>
 
@@ -2001,7 +2001,7 @@
 
                         <!-- Pregunta 3 -->
                         <div class="question">
-                            <p>3. Encierre en un círculo la letra correspondiente a cada declaración CORRECTA:</p>
+                            <p>3. Marque la letra correspondiente a cada declaración CORRECTA:</p>
                             <label><input type="checkbox" name="p3" value="a"> a) La caída destruyó completamente los
                                 planes de Dios.</label><br>
                             <label><input type="checkbox" name="p3" value="b"> b) Satanás le dijo la verdad a
@@ -2026,7 +2026,7 @@
 
                         <!-- Pregunta 5 -->
                         <div class="question">
-                            <p>5. Encierre en un círculo la letra frente a cada declaración que dé la descripción de la
+                            <p>5. Marque la letra frente a cada declaración que dé la descripción de la
                                 caída:</p>
                             <label><input type="checkbox" name="p5" value="a"> a) Adán y Eva fueron creados diferentes
                                 de los animales.</label><br>
@@ -2081,7 +2081,7 @@
 
                         <!-- Pregunta 9 -->
                         <div class="question">
-                            <p>9. Encierre en un círculo la letra correspondiente a las declaraciones siguientes que
+                            <p>9. Marque la letra correspondiente a las declaraciones siguientes que
                                 sean CORRECTAS:</p>
                             <label><input type="checkbox" name="p9" value="a"> a) Abraham perteneció a la raza
                                 semita.</label><br>
@@ -2092,7 +2092,7 @@
                         </div>
 
                         <br>
-                        <button style="margin: 0 auto" class="enviarAutoexamen" data-examen="autoexamen2">Enviar
+                        <button  class="enviarAutoexamen" data-examen="autoexamen2" class="enviar_respuestas">Enviar
                             Autoexamen</button>
 
                     </form>
@@ -2331,7 +2331,7 @@
                     <div class="question">
                         <h4>Aplicación</h4>
                         <p class="p_reader">3. Repase la descripción del mundo de Abraham y estudie el mapa anterior.
-                            Encierre en un círculo la letra correspondiente a cada declaración CORRECTA.</p>
+                            Marque la letra correspondiente a cada declaración CORRECTA.</p>
                         <form>
                             <input type="checkbox" id="respuesta-3a" name="q3" value="a">
                             <label for="respuesta-3a">Ur está cerca del mar Caspio.</label><br>

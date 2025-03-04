@@ -62,7 +62,7 @@ dark-mode table {
   background-color: #333;
 }
 
-/* Inputs y Textareas */
+
 
 
 
@@ -652,12 +652,13 @@ body {
 .autoexamen,
 .compruebe_respuestas{
   margin: 1 rem 0;
-  padding: 1rem 0.5rem; 
-  
+  padding: 1rem 0.5rem;   
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 
 }
-
+.enviar_respuestas{
+  margin: 0 auto"
+}
 .container_question {
   display: flex;
   justify-content: space-between;

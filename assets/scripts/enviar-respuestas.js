@@ -7,7 +7,7 @@ const mapeoOpciones = {
     // Agrega más mapeos según sea necesario
 };
 
-// Función reutilizable para enviar respuestas con descripción
+// Función reutilizable para enviar respuestas con validación de cantidad
 function enviarRespuestas(idBoton, descripcion, rango) {
     document.getElementById(idBoton).addEventListener('click', function (event) {
         event.preventDefault();  // Evita que se recargue la página al enviar el formulario
@@ -17,59 +17,80 @@ function enviarRespuestas(idBoton, descripcion, rango) {
 
         // Obtener los límites del rango
         let [inicio, fin] = rango;
+        let totalEsperado = fin - inicio + 1; // Número total de respuestas esperadas
 
         // Filtrar las respuestas que están dentro del rango
         let respuestasFiltradas = {};
+        let contadorRespuestas = 0;
+
         for (let i = inicio; i <= fin; i++) {
             if (respuestas[`pregunta-${i}`] !== undefined) {
                 respuestasFiltradas[i] = respuestas[`pregunta-${i}`];
+                contadorRespuestas++;
             }
         }
 
+        // Validar si se han contestado todas las preguntas en el rango
+        if (contadorRespuestas < totalEsperado -1) {
+            alert(`Debes responder todas las ${totalEsperado -1 } preguntas antes de enviar.`);
+            alert(contadorRespuestas, totalEsperado )
+            return;
+        }
+
         // Formatear el mensaje para WhatsApp
-        let mensaje = `${descripcion}:\n\n`; // Usar la descripción que se pasa como parámetro
-        let numPregunta = 1; // Contador para numerar desde 1 en adelante
+        let mensaje = `${descripcion}:
+
+`;
+        let numPregunta = 1;
 
         for (let pregunta in respuestasFiltradas) {
             let respuesta = respuestasFiltradas[pregunta];
 
             if (Array.isArray(respuesta)) {
-                // Si es un array (por ejemplo, checkboxes)
-                let respuestasConOpciones = respuesta.map(val => mapeoOpciones[val] || val); // Reemplaza con el mapeo si existe
+                let respuestasConOpciones = respuesta.map(val => mapeoOpciones[val] || val);
                 mensaje += `*Pregunta ${numPregunta}:* \n${respuestasConOpciones.join("\n............................\n")}\n............................\n\n............................\n`;
             } else {
-                // Si es una respuesta de texto o radio button
                 mensaje += `*Pregunta ${numPregunta}:* \n${respuesta}\n............................\n\n............................\n`;
             }
-
-            numPregunta++; // Incrementar contador para numeración continua
+            numPregunta++;
         }
 
         // Codificar el mensaje para URL
         mensaje = encodeURIComponent(mensaje);
 
-        // Número de teléfono del profesor (reemplaza con el número adecuado)
-        const telefonoProfesor = '573150453133'; 
+        // Número de teléfono del profesor
+        const telefonoProfesor = '573150453133';
 
         // Crear el enlace de WhatsApp
         const enlaceWhatsApp = `https://wa.me/${telefonoProfesor}?text=${mensaje}`;
 
-        // Abrir el enlace en una nueva ventana (esto abrirá WhatsApp)
+        // Cambiar el estado del botón a "Autoexamen enviado"
+        let boton = document.getElementById(idBoton);
+        boton.textContent = "Respuestas enviadas";
+        boton.style.backgroundColor = "#d3d3d3"; // Gris claro
+        boton.style.color = "#808080"; // Gris oscuro
+        boton.disabled = true;
+
+        // Abrir el enlace en una nueva ventana
         window.open(enlaceWhatsApp, '_blank');
     });
 }
 
 
 
+
+
+
 document.querySelectorAll('.enviarAutoexamen').forEach(boton => {
     boton.addEventListener('click', function () {
         let idExamen = this.getAttribute('data-examen'); // Obtiene el ID del formulario
-        enviarRespuestasWhatsApp(idExamen, `📋 Respuestas de ${idExamen}`);
+        enviarRespuestasWhatsApp(idExamen, `📋 Respuestas de ${idExamen}`, this);
     });
 });
 
-function enviarRespuestasWhatsApp(idExamen, titulo) {
-    let mensaje = `${titulo}:\n`;
+function enviarRespuestasWhatsApp(idExamen, titulo, boton) {
+    let mensaje = `${titulo}:
+`;
     
     // Obtener todas las preguntas dentro del formulario específico
     let preguntas = document.querySelectorAll(`#${idExamen} .question`);
@@ -111,7 +132,14 @@ function enviarRespuestasWhatsApp(idExamen, titulo) {
     
     // Abrir WhatsApp en una nueva pestaña
     window.open(url, '_blank');
+
+    // Cambiar estilos del botón
+    boton.textContent = "Autoexamen enviado";
+    boton.style.backgroundColor = "#d3d3d3"; // Gris claro
+    boton.style.color = "#808080"; // Gris oscuro
+    boton.disabled = true;
 }
+
 
 
 // Asocia cada botón a la función reutilizable con una descripción específica
