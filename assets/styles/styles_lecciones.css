@@ -649,6 +649,11 @@ body {
   margin: 1rem auto;
   
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 .autoexamen,
 .compruebe_respuestas{
   margin: 1 rem 0;
